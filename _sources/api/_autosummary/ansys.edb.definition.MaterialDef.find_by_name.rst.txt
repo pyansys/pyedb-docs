@@ -1,0 +1,6 @@
+find\_by\_name
+==============
+
+.. currentmodule:: ansys.edb.definition
+
+.. automethod:: MaterialDef.find_by_name

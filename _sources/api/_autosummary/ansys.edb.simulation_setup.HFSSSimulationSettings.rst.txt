@@ -1,0 +1,43 @@
+﻿ansys.edb.simulation\_setup.HFSSSimulationSettings
+==================================================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoclass:: HFSSSimulationSettings
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      HFSSSimulationSettings.adaptive_settings
+      
+      
+      HFSSSimulationSettings.id
+      
+      
+      HFSSSimulationSettings.is_null
+      
+      
+      HFSSSimulationSettings.mesh_operations
+      
+      
+      HFSSSimulationSettings.msg
+      
+   
+   

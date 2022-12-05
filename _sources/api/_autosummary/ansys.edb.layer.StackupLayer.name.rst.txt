@@ -1,0 +1,6 @@
+name
+====
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoproperty:: StackupLayer.name

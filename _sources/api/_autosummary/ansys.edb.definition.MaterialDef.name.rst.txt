@@ -1,0 +1,6 @@
+name
+====
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: MaterialDef.name

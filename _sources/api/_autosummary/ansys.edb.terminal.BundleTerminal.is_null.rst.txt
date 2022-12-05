@@ -1,0 +1,6 @@
+is\_null
+========
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: BundleTerminal.is_null

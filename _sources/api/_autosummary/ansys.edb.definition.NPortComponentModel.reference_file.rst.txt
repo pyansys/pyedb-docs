@@ -1,0 +1,6 @@
+reference\_file
+===============
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: NPortComponentModel.reference_file

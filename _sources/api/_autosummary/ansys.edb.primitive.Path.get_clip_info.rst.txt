@@ -1,0 +1,6 @@
+get\_clip\_info
+===============
+
+.. currentmodule:: ansys.edb.primitive
+
+.. automethod:: Path.get_clip_info

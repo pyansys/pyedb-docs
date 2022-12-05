@@ -1,0 +1,6 @@
+obj\_type
+=========
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: BundleTerminal.obj_type

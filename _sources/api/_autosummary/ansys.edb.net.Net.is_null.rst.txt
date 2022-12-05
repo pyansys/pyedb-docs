@@ -1,0 +1,6 @@
+is\_null
+========
+
+.. currentmodule:: ansys.edb.net
+
+.. autoproperty:: Net.is_null

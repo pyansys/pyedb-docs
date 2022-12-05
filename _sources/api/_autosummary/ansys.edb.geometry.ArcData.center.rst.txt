@@ -1,0 +1,6 @@
+center
+======
+
+.. currentmodule:: ansys.edb.geometry
+
+.. autoproperty:: ArcData.center

@@ -1,0 +1,26 @@
+﻿ansys.edb.terminal.HfssPIType
+=============================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoclass:: HfssPIType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+   
+   

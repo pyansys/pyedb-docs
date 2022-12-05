@@ -1,0 +1,6 @@
+zone\_primitives
+================
+
+.. currentmodule:: ansys.edb.layout
+
+.. autoproperty:: Layout.zone_primitives

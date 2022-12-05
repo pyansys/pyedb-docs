@@ -1,0 +1,6 @@
+direction
+=========
+
+.. currentmodule:: ansys.edb.geometry
+
+.. autoproperty:: ArcData.direction

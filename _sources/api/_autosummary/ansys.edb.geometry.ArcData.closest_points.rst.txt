@@ -1,0 +1,6 @@
+closest\_points
+===============
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: ArcData.closest_points

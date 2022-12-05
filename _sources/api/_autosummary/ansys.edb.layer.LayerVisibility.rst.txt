@@ -1,0 +1,27 @@
+﻿ansys.edb.layer.LayerVisibility
+===============================
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoclass:: LayerVisibility
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+      
+   
+   

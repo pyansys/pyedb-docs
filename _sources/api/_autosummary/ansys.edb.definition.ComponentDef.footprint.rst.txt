@@ -1,0 +1,6 @@
+footprint
+=========
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: ComponentDef.footprint

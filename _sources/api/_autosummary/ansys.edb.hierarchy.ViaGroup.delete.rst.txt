@@ -1,0 +1,6 @@
+delete
+======
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. automethod:: ViaGroup.delete

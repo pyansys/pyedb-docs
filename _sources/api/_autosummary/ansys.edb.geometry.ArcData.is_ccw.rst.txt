@@ -1,0 +1,6 @@
+is\_ccw
+=======
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: ArcData.is_ccw

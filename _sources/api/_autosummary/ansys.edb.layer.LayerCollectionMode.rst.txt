@@ -1,0 +1,24 @@
+﻿ansys.edb.layer.LayerCollectionMode
+===================================
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoclass:: LayerCollectionMode
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+   
+   

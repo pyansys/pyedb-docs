@@ -1,0 +1,6 @@
+msg
+===
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: Path.msg

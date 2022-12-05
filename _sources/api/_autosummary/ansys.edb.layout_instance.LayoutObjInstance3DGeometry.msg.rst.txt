@@ -1,0 +1,6 @@
+msg
+===
+
+.. currentmodule:: ansys.edb.layout_instance
+
+.. autoproperty:: LayoutObjInstance3DGeometry.msg

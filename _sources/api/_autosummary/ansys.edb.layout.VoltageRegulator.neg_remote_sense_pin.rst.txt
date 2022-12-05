@@ -1,0 +1,6 @@
+neg\_remote\_sense\_pin
+=======================
+
+.. currentmodule:: ansys.edb.layout
+
+.. autoproperty:: VoltageRegulator.neg_remote_sense_pin

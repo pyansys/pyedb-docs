@@ -1,0 +1,6 @@
+angle
+=====
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PointData.angle

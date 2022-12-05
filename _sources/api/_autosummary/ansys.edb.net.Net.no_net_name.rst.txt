@@ -1,0 +1,6 @@
+no\_net\_name
+=============
+
+.. currentmodule:: ansys.edb.net
+
+.. autoattribute:: Net.no_net_name

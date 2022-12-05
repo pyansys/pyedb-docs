@@ -1,0 +1,6 @@
+boundary\_type
+==============
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: Terminal.boundary_type

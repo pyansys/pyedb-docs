@@ -1,0 +1,6 @@
+is\_void
+========
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: Rectangle.is_void

@@ -1,0 +1,6 @@
+cell\_instances
+===============
+
+.. currentmodule:: ansys.edb.layout
+
+.. autoproperty:: Layout.cell_instances

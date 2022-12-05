@@ -1,0 +1,25 @@
+﻿ansys.edb.definition.SolderballShape
+====================================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: SolderballShape
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+   
+   

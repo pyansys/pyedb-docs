@@ -1,0 +1,6 @@
+magnitude
+=========
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PointData.magnitude

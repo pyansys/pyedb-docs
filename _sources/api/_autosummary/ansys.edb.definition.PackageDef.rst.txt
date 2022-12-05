@@ -1,0 +1,37 @@
+﻿ansys.edb.definition.PackageDef
+===============================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: PackageDef
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      PackageDef.id
+      
+      
+      PackageDef.is_null
+      
+      
+      PackageDef.msg
+      
+   
+   

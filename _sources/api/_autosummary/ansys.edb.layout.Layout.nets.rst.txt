@@ -1,0 +1,6 @@
+nets
+====
+
+.. currentmodule:: ansys.edb.layout
+
+.. autoproperty:: Layout.nets

@@ -1,0 +1,6 @@
+msg
+===
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: NPortComponentModel.msg

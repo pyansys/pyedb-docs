@@ -1,0 +1,6 @@
+net
+===
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: Circle.net

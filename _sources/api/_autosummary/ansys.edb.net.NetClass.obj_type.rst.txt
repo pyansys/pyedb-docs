@@ -1,0 +1,6 @@
+obj\_type
+=========
+
+.. currentmodule:: ansys.edb.net
+
+.. autoproperty:: NetClass.obj_type

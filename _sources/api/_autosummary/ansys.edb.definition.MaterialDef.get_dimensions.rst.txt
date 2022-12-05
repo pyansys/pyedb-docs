@@ -1,0 +1,6 @@
+get\_dimensions
+===============
+
+.. currentmodule:: ansys.edb.definition
+
+.. automethod:: MaterialDef.get_dimensions

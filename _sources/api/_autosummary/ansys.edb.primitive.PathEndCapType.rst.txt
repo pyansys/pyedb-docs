@@ -1,0 +1,26 @@
+﻿ansys.edb.primitive.PathEndCapType
+==================================
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoclass:: PathEndCapType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+   
+   

@@ -1,0 +1,6 @@
+die\_property
+=============
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: ICComponentProperty.die_property

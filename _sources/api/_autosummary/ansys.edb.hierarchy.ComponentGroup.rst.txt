@@ -1,0 +1,127 @@
+﻿ansys.edb.hierarchy.ComponentGroup
+==================================
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoclass:: ComponentGroup
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      ComponentGroup.add_member
+      
+      
+      ComponentGroup.cast
+      
+      
+      ComponentGroup.create
+      
+      
+      ComponentGroup.create_with_component
+      
+      
+      ComponentGroup.delete
+      
+      
+      ComponentGroup.find
+      
+      
+      ComponentGroup.find_by_def
+      
+      
+      ComponentGroup.find_by_id
+      
+      
+      ComponentGroup.get_product_property
+      
+      
+      ComponentGroup.get_product_property_ids
+      
+      
+      ComponentGroup.remove_member
+      
+      
+      ComponentGroup.set_product_property
+      
+      
+      ComponentGroup.ungroup
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      ComponentGroup.component
+      
+      
+      ComponentGroup.component_def
+      
+      
+      ComponentGroup.component_property
+      
+      
+      ComponentGroup.component_type
+      
+      
+      ComponentGroup.edb_uid
+      
+      
+      ComponentGroup.group
+      
+      
+      ComponentGroup.id
+      
+      
+      ComponentGroup.is_null
+      
+      
+      ComponentGroup.layout
+      
+      
+      ComponentGroup.layout_obj_type
+      
+      
+      ComponentGroup.location
+      
+      
+      ComponentGroup.members
+      
+      
+      ComponentGroup.msg
+      
+      
+      ComponentGroup.name
+      
+      
+      ComponentGroup.net
+      
+      
+      ComponentGroup.num_pins
+      
+      
+      ComponentGroup.obj_type
+      
+      
+      ComponentGroup.placement_layer
+      
+      
+      ComponentGroup.solve_independent_preference
+      
+      
+      ComponentGroup.transform
+      
+   
+   

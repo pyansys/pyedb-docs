@@ -1,0 +1,6 @@
+term\_to\_ground
+================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: EdgeTerminal.term_to_ground

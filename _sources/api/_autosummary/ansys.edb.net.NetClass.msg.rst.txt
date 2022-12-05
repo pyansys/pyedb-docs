@@ -1,0 +1,6 @@
+msg
+===
+
+.. currentmodule:: ansys.edb.net
+
+.. autoproperty:: NetClass.msg

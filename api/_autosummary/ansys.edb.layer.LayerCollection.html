@@ -1,0 +1,657 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>ansys.edb.layer.LayerCollection &#8212; ansys-edb</title>
+    
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/pyansys_sphinx_theme.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    
+        <link href="../../_static/css/breadcrumbs.css" rel="stylesheet">
+    
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="add_layer_above" href="ansys.edb.layer.LayerCollection.add_layer_above.html" />
+    <link rel="prev" title="zones" href="ansys.edb.layer.ViaLayer.zones.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><style>
+    .navbar-light {
+        background-color: black !important;
+    }
+</style>
+
+<div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="https://docs.pyansys.com/">
+  <img src="../../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" >
+      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+    </span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../installation.html">
+  Installation
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../user_guide/user_guide.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../examples/examples.html">
+  Examples
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyansys/pyedb" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+    </nav>
+    
+    
+        <div class="container-xl">
+    <div class="row">
+        <div class="col-12 col-md-3" id="breadcrumbs-spacer"></div>
+        <div class="col-12 col-md-11 col-xl-9" id="breadcrumbs">
+          
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+    
+        <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
+    
+    
+        <li class="nav-item nav-item-0"><a href="../../index.html">ansys-edb</a> » </li>
+    
+
+          <li class="nav-item nav-item-1"><a href="../index.html" >API Reference</a> » </li>
+          <li class="nav-item nav-item-2"><a href="../layer.html" accesskey="U">Layers</a> » </li>
+        <li class="nav-item nav-item-this"><a href="">ansys.edb.layer.LayerCollection</a></li> 
+      </ul>
+    </div>
+        </div>
+  </div>
+</div>
+    
+
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../database.html">
+   Database
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../definition.html">
+   Definition
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../geometry.html">
+   Geometry
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hierarchy.html">
+   Hierarchy
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../layer.html">
+   Layers
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layer.Layer.html">
+     ansys.edb.layer.Layer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layer.StackupLayer.html">
+     ansys.edb.layer.StackupLayer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layer.ViaLayer.html">
+     ansys.edb.layer.ViaLayer
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="current reference internal" href="#">
+     ansys.edb.layer.LayerCollection
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.add_layer_above.html">
+       add_layer_above
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.add_layer_below.html">
+       add_layer_below
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.add_layer_bottom.html">
+       add_layer_bottom
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.add_layer_top.html">
+       add_layer_top
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.add_layers.html">
+       add_layers
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.add_stackup_layer_at_elevation.html">
+       add_stackup_layer_at_elevation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.add_via_layer.html">
+       add_via_layer
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.add_zone_to_layer.html">
+       add_zone_to_layer
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.clone.html">
+       clone
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.create.html">
+       create
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.find_by_name.html">
+       find_by_name
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.get_layers.html">
+       get_layers
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.get_product_property.html">
+       get_product_property
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.get_product_property_ids.html">
+       get_product_property_ids
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.get_top_bottom_stackup_layers.html">
+       get_top_bottom_stackup_layers
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.get_zone_name.html">
+       get_zone_name
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.import_from_control_file.html">
+       import_from_control_file
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.insert_zone.html">
+       insert_zone
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.is_valid.html">
+       is_valid
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.merge_dielectrics.html">
+       merge_dielectrics
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.remove_zone.html">
+       remove_zone
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.set_product_property.html">
+       set_product_property
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.set_zone_name.html">
+       set_zone_name
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.simplify_dielectrics_for_phi.html">
+       simplify_dielectrics_for_phi
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.id.html">
+       id
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.is_null.html">
+       is_null
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.mode.html">
+       mode
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.msg.html">
+       msg
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layer.LayerCollection.zone_ids.html">
+       zone_ids
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layer.LayerType.html">
+     ansys.edb.layer.LayerType
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layer.TopBottomAssociation.html">
+     ansys.edb.layer.TopBottomAssociation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layer.DrawOverride.html">
+     ansys.edb.layer.DrawOverride
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layer.LayerVisibility.html">
+     ansys.edb.layer.LayerVisibility
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layer.DCThicknessType.html">
+     ansys.edb.layer.DCThicknessType
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layer.RoughnessRegion.html">
+     ansys.edb.layer.RoughnessRegion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layer.LayerCollectionMode.html">
+     ansys.edb.layer.LayerCollectionMode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layer.LayerTypeSet.html">
+     ansys.edb.layer.LayerTypeSet
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layer.DielectricMergingMethod.html">
+     ansys.edb.layer.DielectricMergingMethod
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../layout.html">
+   Layout
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../layout_instance.html">
+   Layout Instance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../net.html">
+   Nets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../primitive.html">
+   Primitives
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../session.html">
+   Session
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../simulation_setup.html">
+   Simulation Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../terminal.html">
+   Terminals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../utility.html">
+   Utility
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../release_notes.html">
+   Release Notes
+  </a>
+ </li>
+</ul>
+
+    
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="ansys-edb-layer-layercollection">
+<h1>ansys.edb.layer.LayerCollection<a class="headerlink" href="#ansys-edb-layer-layercollection" title="Permalink to this headline">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ansys.edb.layer.LayerCollection">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.edb.layer.</span></span><span class="sig-name descname"><span class="pre">LayerCollection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.edb.layer.LayerCollection" title="Permalink to this definition">#</a></dt>
+<dd><p>Layer Collection.</p>
+<p class="rubric">Methods</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.add_layer_above.html#ansys.edb.layer.LayerCollection.add_layer_above" title="ansys.edb.layer.LayerCollection.add_layer_above"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.add_layer_above</span></code></a>(...)</p></td>
+<td><p>Add a new layer above the specified layer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.add_layer_below.html#ansys.edb.layer.LayerCollection.add_layer_below" title="ansys.edb.layer.LayerCollection.add_layer_below"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.add_layer_below</span></code></a>(...)</p></td>
+<td><p>Add a new layer below the specified layer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.add_layer_bottom.html#ansys.edb.layer.LayerCollection.add_layer_bottom" title="ansys.edb.layer.LayerCollection.add_layer_bottom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.add_layer_bottom</span></code></a>(layer_to_add)</p></td>
+<td><p>Add a new layer to the bottom of the LayerCollection.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.add_layer_top.html#ansys.edb.layer.LayerCollection.add_layer_top" title="ansys.edb.layer.LayerCollection.add_layer_top"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.add_layer_top</span></code></a>(layer_to_add)</p></td>
+<td><p>Add a new layer to the top of the LayerCollection.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.add_layers.html#ansys.edb.layer.LayerCollection.add_layers" title="ansys.edb.layer.LayerCollection.add_layers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.add_layers</span></code></a>(layers)</p></td>
+<td><p>Add layers to a layer collection.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.add_stackup_layer_at_elevation.html#ansys.edb.layer.LayerCollection.add_stackup_layer_at_elevation" title="ansys.edb.layer.LayerCollection.add_stackup_layer_at_elevation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.add_stackup_layer_at_elevation</span></code></a>(...)</p></td>
+<td><p>Add a <a class="reference internal" href="ansys.edb.layer.StackupLayer.html#ansys.edb.layer.StackupLayer" title="ansys.edb.layer.StackupLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">StackupLayer</span></code></a> at user specified elevation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.add_via_layer.html#ansys.edb.layer.LayerCollection.add_via_layer" title="ansys.edb.layer.LayerCollection.add_via_layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.add_via_layer</span></code></a>(via_layer_to_add)</p></td>
+<td><p>Add a <a class="reference internal" href="ansys.edb.layer.ViaLayer.html#ansys.edb.layer.ViaLayer" title="ansys.edb.layer.ViaLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViaLayer</span></code></a> to the layer collection.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.add_zone_to_layer.html#ansys.edb.layer.LayerCollection.add_zone_to_layer" title="ansys.edb.layer.LayerCollection.add_zone_to_layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.add_zone_to_layer</span></code></a>(layer, ...)</p></td>
+<td><p>Set the zone to the layer and update the layer in the collection.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.clone.html#ansys.edb.layer.LayerCollection.clone" title="ansys.edb.layer.LayerCollection.clone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.clone</span></code></a>()</p></td>
+<td><p>Create a clone of the layer collection.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.create.html#ansys.edb.layer.LayerCollection.create" title="ansys.edb.layer.LayerCollection.create"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.create</span></code></a>([mode])</p></td>
+<td><p>Create a layer collection.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.find_by_name.html#ansys.edb.layer.LayerCollection.find_by_name" title="ansys.edb.layer.LayerCollection.find_by_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.find_by_name</span></code></a>(layer_name)</p></td>
+<td><p>Find a layer in the layer collection.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.get_layers.html#ansys.edb.layer.LayerCollection.get_layers" title="ansys.edb.layer.LayerCollection.get_layers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.get_layers</span></code></a>([layer_filter])</p></td>
+<td><p>Retrieve a list of <a class="reference internal" href="ansys.edb.layer.Layer.html#ansys.edb.layer.Layer" title="ansys.edb.layer.Layer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Layers</span></code></a> in the layer collection filtered by the given layer filter.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.get_product_property.html#ansys.edb.layer.LayerCollection.get_product_property" title="ansys.edb.layer.LayerCollection.get_product_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.get_product_property</span></code></a>(...)</p></td>
+<td><p>Get the product property of the layer collection associated with the given product and attribute ids.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.get_product_property_ids.html#ansys.edb.layer.LayerCollection.get_product_property_ids" title="ansys.edb.layer.LayerCollection.get_product_property_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.get_product_property_ids</span></code></a>(prod_id)</p></td>
+<td><p>Get a list of attribute ids corresponding to the provided product id for the layer collection.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.get_top_bottom_stackup_layers.html#ansys.edb.layer.LayerCollection.get_top_bottom_stackup_layers" title="ansys.edb.layer.LayerCollection.get_top_bottom_stackup_layers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.get_top_bottom_stackup_layers</span></code></a>(...)</p></td>
+<td><p>Get the top and bottom <a class="reference internal" href="ansys.edb.layer.StackupLayer.html#ansys.edb.layer.StackupLayer" title="ansys.edb.layer.StackupLayer"><code class="xref py py-class docutils literal notranslate"><span class="pre">StackupLayers</span></code></a> of specific type and their elevations.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.get_zone_name.html#ansys.edb.layer.LayerCollection.get_zone_name" title="ansys.edb.layer.LayerCollection.get_zone_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.get_zone_name</span></code></a>(zone)</p></td>
+<td><p>Get the name corresponding to the specified zone.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.import_from_control_file.html#ansys.edb.layer.LayerCollection.import_from_control_file" title="ansys.edb.layer.LayerCollection.import_from_control_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.import_from_control_file</span></code></a>(...)</p></td>
+<td><p>Import layers from the provided control file and optional XML schema.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.insert_zone.html#ansys.edb.layer.LayerCollection.insert_zone" title="ansys.edb.layer.LayerCollection.insert_zone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.insert_zone</span></code></a>([copy_zone])</p></td>
+<td><p>Insert a new zone.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.is_valid.html#ansys.edb.layer.LayerCollection.is_valid" title="ansys.edb.layer.LayerCollection.is_valid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.is_valid</span></code></a>()</p></td>
+<td><p>Check if the layer collection is  in a valid state.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.merge_dielectrics.html#ansys.edb.layer.LayerCollection.merge_dielectrics" title="ansys.edb.layer.LayerCollection.merge_dielectrics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.merge_dielectrics</span></code></a>(layout, ...)</p></td>
+<td><p>Merge the dielectric layers in a range of layers into one large dielectric layer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.remove_zone.html#ansys.edb.layer.LayerCollection.remove_zone" title="ansys.edb.layer.LayerCollection.remove_zone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.remove_zone</span></code></a>(zone)</p></td>
+<td><p>Remove the specified zone.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.set_product_property.html#ansys.edb.layer.LayerCollection.set_product_property" title="ansys.edb.layer.LayerCollection.set_product_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.set_product_property</span></code></a>(...)</p></td>
+<td><p>Set the product property of the layer collection associated with the given product and attribute ids.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.set_zone_name.html#ansys.edb.layer.LayerCollection.set_zone_name" title="ansys.edb.layer.LayerCollection.set_zone_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.set_zone_name</span></code></a>(zone, name)</p></td>
+<td><p>Set the name corresponding to the specified zone.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.simplify_dielectrics_for_phi.html#ansys.edb.layer.LayerCollection.simplify_dielectrics_for_phi" title="ansys.edb.layer.LayerCollection.simplify_dielectrics_for_phi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.simplify_dielectrics_for_phi</span></code></a>(...)</p></td>
+<td><p>Split dielectric layers at the boundaries of signal layers and merge them.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.id.html#ansys.edb.layer.LayerCollection.id" title="ansys.edb.layer.LayerCollection.id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.id</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>: The unique ID of an EDB object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.is_null.html#ansys.edb.layer.LayerCollection.is_null" title="ansys.edb.layer.LayerCollection.is_null"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.is_null</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>: Determine whether this object exists in EDB.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.mode.html#ansys.edb.layer.LayerCollection.mode" title="ansys.edb.layer.LayerCollection.mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.mode</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.layer.LayerCollectionMode.html#ansys.edb.layer.LayerCollectionMode" title="ansys.edb.layer.LayerCollectionMode"><code class="xref py py-class docutils literal notranslate"><span class="pre">LayerCollectionMode</span></code></a>: Get the mode the layer collection.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.msg.html#ansys.edb.layer.LayerCollection.msg" title="ansys.edb.layer.LayerCollection.msg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.msg</span></code></a></p></td>
+<td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDBObjMessage</span></code> : Protobuf message that represents this object's ID.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layer.LayerCollection.zone_ids.html#ansys.edb.layer.LayerCollection.zone_ids" title="ansys.edb.layer.LayerCollection.zone_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerCollection.zone_ids</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>[<a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>]: Get a list of all zones in the layer collection.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</section>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright (c) 2022 ANSYS, Inc. All rights reserved.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

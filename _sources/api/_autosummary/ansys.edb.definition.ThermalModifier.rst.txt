@@ -1,0 +1,37 @@
+﻿ansys.edb.definition.ThermalModifier
+====================================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: ThermalModifier
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      ThermalModifier.id
+      
+      
+      ThermalModifier.is_null
+      
+      
+      ThermalModifier.msg
+      
+   
+   

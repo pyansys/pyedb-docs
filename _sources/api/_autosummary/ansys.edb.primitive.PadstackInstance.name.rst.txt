@@ -1,0 +1,6 @@
+name
+====
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: PadstackInstance.name

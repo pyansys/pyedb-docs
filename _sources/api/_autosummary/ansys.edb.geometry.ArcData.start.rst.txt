@@ -1,0 +1,6 @@
+start
+=====
+
+.. currentmodule:: ansys.edb.geometry
+
+.. autoproperty:: ArcData.start

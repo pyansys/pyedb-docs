@@ -1,0 +1,6 @@
+thickness
+=========
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: Structure3D.thickness

@@ -1,0 +1,79 @@
+﻿ansys.edb.definition.MaterialDef
+================================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: MaterialDef
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      MaterialDef.create
+      
+      
+      MaterialDef.delete
+      
+      
+      MaterialDef.find_by_name
+      
+      
+      MaterialDef.get_all_properties
+      
+      
+      MaterialDef.get_anisotropic_thermal_modifier
+      
+      
+      MaterialDef.get_dimensions
+      
+      
+      MaterialDef.get_property
+      
+      
+      MaterialDef.get_thermal_modifier
+      
+      
+      MaterialDef.remove_property
+      
+      
+      MaterialDef.set_anisotropic_thermal_modifier
+      
+      
+      MaterialDef.set_property
+      
+      
+      MaterialDef.set_thermal_modifier
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      MaterialDef.dielectric_material_model
+      
+      
+      MaterialDef.id
+      
+      
+      MaterialDef.is_null
+      
+      
+      MaterialDef.msg
+      
+      
+      MaterialDef.name
+      
+   
+   

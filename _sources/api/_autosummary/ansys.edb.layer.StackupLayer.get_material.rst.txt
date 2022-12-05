@@ -1,0 +1,6 @@
+get\_material
+=============
+
+.. currentmodule:: ansys.edb.layer
+
+.. automethod:: StackupLayer.get_material

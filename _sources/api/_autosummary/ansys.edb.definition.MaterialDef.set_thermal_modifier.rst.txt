@@ -1,0 +1,6 @@
+set\_thermal\_modifier
+======================
+
+.. currentmodule:: ansys.edb.definition
+
+.. automethod:: MaterialDef.set_thermal_modifier

@@ -1,0 +1,6 @@
+set\_material
+=============
+
+.. currentmodule:: ansys.edb.primitive
+
+.. automethod:: Bondwire.set_material

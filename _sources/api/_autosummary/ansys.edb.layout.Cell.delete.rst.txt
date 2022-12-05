@@ -1,0 +1,6 @@
+delete
+======
+
+.. currentmodule:: ansys.edb.layout
+
+.. automethod:: Cell.delete

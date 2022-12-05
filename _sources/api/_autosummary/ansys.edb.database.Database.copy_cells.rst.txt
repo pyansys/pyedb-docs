@@ -1,0 +1,6 @@
+copy\_cells
+===========
+
+.. currentmodule:: ansys.edb.database
+
+.. automethod:: Database.copy_cells

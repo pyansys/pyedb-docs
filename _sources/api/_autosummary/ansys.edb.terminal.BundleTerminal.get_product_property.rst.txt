@@ -1,0 +1,6 @@
+get\_product\_property
+======================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. automethod:: BundleTerminal.get_product_property

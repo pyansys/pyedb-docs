@@ -1,0 +1,22 @@
+﻿ansys.edb.simulation\_setup.SweepData
+=====================================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoclass:: SweepData
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   

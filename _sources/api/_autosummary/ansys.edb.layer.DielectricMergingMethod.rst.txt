@@ -1,0 +1,24 @@
+﻿ansys.edb.layer.DielectricMergingMethod
+=======================================
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoclass:: DielectricMergingMethod
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+   
+   

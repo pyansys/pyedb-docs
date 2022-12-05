@@ -1,0 +1,6 @@
+component\_type
+===============
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: ComponentGroup.component_type

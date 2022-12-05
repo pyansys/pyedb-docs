@@ -1,0 +1,6 @@
+layer
+=====
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: PointTerminal.layer

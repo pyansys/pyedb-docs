@@ -1,0 +1,6 @@
+set\_variable\_value
+====================
+
+.. currentmodule:: ansys.edb.layout
+
+.. automethod:: Cell.set_variable_value

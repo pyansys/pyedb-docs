@@ -1,0 +1,6 @@
+placement\_elevation
+====================
+
+.. currentmodule:: ansys.edb.layout_instance
+
+.. autoproperty:: LayoutInstanceContext.placement_elevation

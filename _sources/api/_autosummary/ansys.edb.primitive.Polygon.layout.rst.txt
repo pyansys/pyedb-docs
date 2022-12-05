@@ -1,0 +1,6 @@
+layout
+======
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: Polygon.layout

@@ -1,0 +1,6 @@
+ungroup
+=======
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. automethod:: Structure3D.ungroup

@@ -1,0 +1,6 @@
+differential\_pairs
+===================
+
+.. currentmodule:: ansys.edb.layout
+
+.. autoproperty:: Layout.differential_pairs

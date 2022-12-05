@@ -1,0 +1,6 @@
+dot
+===
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PointData.dot

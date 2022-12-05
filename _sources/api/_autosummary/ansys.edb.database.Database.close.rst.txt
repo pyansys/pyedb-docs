@@ -1,0 +1,6 @@
+close
+=====
+
+.. currentmodule:: ansys.edb.database
+
+.. automethod:: Database.close

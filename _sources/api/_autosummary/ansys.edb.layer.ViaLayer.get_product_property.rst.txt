@@ -1,0 +1,6 @@
+get\_product\_property
+======================
+
+.. currentmodule:: ansys.edb.layer
+
+.. automethod:: ViaLayer.get_product_property

@@ -1,0 +1,6 @@
+primitives
+==========
+
+.. currentmodule:: ansys.edb.net
+
+.. autoproperty:: Net.primitives

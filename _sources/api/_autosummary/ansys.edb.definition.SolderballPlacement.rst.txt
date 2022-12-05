@@ -1,0 +1,24 @@
+﻿ansys.edb.definition.SolderballPlacement
+========================================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: SolderballPlacement
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+   
+   

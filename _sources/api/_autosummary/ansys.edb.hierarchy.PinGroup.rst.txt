@@ -1,0 +1,61 @@
+﻿ansys.edb.hierarchy.PinGroup
+============================
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoclass:: PinGroup
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      PinGroup.add_pins
+      
+      
+      PinGroup.create
+      
+      
+      PinGroup.find
+      
+      
+      PinGroup.remove_pins
+      
+      
+      PinGroup.unique_name
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      PinGroup.id
+      
+      
+      PinGroup.is_null
+      
+      
+      PinGroup.layout_obj_type
+      
+      
+      PinGroup.msg
+      
+      
+      PinGroup.name
+      
+      
+      PinGroup.pins
+      
+   
+   

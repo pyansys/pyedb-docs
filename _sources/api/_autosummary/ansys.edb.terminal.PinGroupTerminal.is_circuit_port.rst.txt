@@ -1,0 +1,6 @@
+is\_circuit\_port
+=================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: PinGroupTerminal.is_circuit_port

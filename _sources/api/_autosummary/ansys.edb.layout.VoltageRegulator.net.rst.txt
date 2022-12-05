@@ -1,0 +1,6 @@
+net
+===
+
+.. currentmodule:: ansys.edb.layout
+
+.. autoproperty:: VoltageRegulator.net

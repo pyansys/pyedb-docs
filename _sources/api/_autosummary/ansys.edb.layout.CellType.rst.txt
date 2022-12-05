@@ -1,0 +1,23 @@
+﻿ansys.edb.layout.CellType
+=========================
+
+.. currentmodule:: ansys.edb.layout
+
+.. autoclass:: CellType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+   
+   

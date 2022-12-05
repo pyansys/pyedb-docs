@@ -1,0 +1,6 @@
+remove\_pins
+============
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. automethod:: PinGroup.remove_pins

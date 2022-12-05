@@ -1,0 +1,22 @@
+﻿ansys.edb.simulation\_setup.SkinDepthMeshOperation
+==================================================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoclass:: SkinDepthMeshOperation
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   

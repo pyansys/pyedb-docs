@@ -1,0 +1,23 @@
+﻿ansys.edb.terminal.EdgeType
+===========================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoclass:: EdgeType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+   
+   

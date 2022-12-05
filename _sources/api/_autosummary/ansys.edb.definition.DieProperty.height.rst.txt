@@ -1,0 +1,6 @@
+height
+======
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: DieProperty.height

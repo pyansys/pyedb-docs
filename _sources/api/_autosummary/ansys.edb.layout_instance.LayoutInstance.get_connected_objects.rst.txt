@@ -1,0 +1,6 @@
+get\_connected\_objects
+=======================
+
+.. currentmodule:: ansys.edb.layout_instance
+
+.. automethod:: LayoutInstance.get_connected_objects

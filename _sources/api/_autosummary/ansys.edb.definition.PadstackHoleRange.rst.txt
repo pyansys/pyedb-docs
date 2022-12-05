@@ -1,0 +1,26 @@
+﻿ansys.edb.definition.PadstackHoleRange
+======================================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: PadstackHoleRange
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+   
+   

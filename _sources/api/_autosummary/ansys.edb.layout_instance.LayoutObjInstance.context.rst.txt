@@ -1,0 +1,6 @@
+context
+=======
+
+.. currentmodule:: ansys.edb.layout_instance
+
+.. autoproperty:: LayoutObjInstance.context

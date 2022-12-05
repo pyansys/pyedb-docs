@@ -1,0 +1,6 @@
+is\_void
+========
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: BoardBendDef.is_void

@@ -1,0 +1,697 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>ansys.edb.layout.Cell &#8212; ansys-edb</title>
+    
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/pyansys_sphinx_theme.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    
+        <link href="../../_static/css/breadcrumbs.css" rel="stylesheet">
+    
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="add_menu_variable" href="ansys.edb.layout.Cell.add_menu_variable.html" />
+    <link rel="prev" title="Layout" href="../layout.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><style>
+    .navbar-light {
+        background-color: black !important;
+    }
+</style>
+
+<div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="https://docs.pyansys.com/">
+  <img src="../../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" >
+      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+    </span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../installation.html">
+  Installation
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../user_guide/user_guide.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../examples/examples.html">
+  Examples
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyansys/pyedb" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+    </nav>
+    
+    
+        <div class="container-xl">
+    <div class="row">
+        <div class="col-12 col-md-3" id="breadcrumbs-spacer"></div>
+        <div class="col-12 col-md-11 col-xl-9" id="breadcrumbs">
+          
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+    
+        <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
+    
+    
+        <li class="nav-item nav-item-0"><a href="../../index.html">ansys-edb</a> » </li>
+    
+
+          <li class="nav-item nav-item-1"><a href="../index.html" >API Reference</a> » </li>
+          <li class="nav-item nav-item-2"><a href="../layout.html" accesskey="U">Layout</a> » </li>
+        <li class="nav-item nav-item-this"><a href="">ansys.edb.layout.Cell</a></li> 
+      </ul>
+    </div>
+        </div>
+  </div>
+</div>
+    
+
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../database.html">
+   Database
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../definition.html">
+   Definition
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../geometry.html">
+   Geometry
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hierarchy.html">
+   Hierarchy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../layer.html">
+   Layers
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../layout.html">
+   Layout
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="current reference internal" href="#">
+     ansys.edb.layout.Cell
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.add_menu_variable.html">
+       add_menu_variable
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.add_simulation_setup.html">
+       add_simulation_setup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.add_variable.html">
+       add_variable
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.create.html">
+       create
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.create_value.html">
+       create_value
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.cutout.html">
+       cutout
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.delete.html">
+       delete
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.delete_simulation_setup.html">
+       delete_simulation_setup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.delete_variable.html">
+       delete_variable
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.find.html">
+       find
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.generate_auto_hfss_regions.html">
+       generate_auto_hfss_regions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.generate_via_smart_box.html">
+       generate_via_smart_box
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.get_all_variable_names.html">
+       get_all_variable_names
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.get_product_property.html">
+       get_product_property
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.get_product_property_ids.html">
+       get_product_property_ids
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.get_variable_desc.html">
+       get_variable_desc
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.get_variable_value.html">
+       get_variable_value
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.is_parameter.html">
+       is_parameter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.set_hfss_extent_info.html">
+       set_hfss_extent_info
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.set_product_property.html">
+       set_product_property
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.set_variable_desc.html">
+       set_variable_desc
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.set_variable_value.html">
+       set_variable_value
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.anti_pads_always_on.html">
+       anti_pads_always_on
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.anti_pads_option.html">
+       anti_pads_option
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.database.html">
+       database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.design_mode.html">
+       design_mode
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.flattened_layout.html">
+       flattened_layout
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.hfss_extent_info.html">
+       hfss_extent_info
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.id.html">
+       id
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.is_blackbox.html">
+       is_blackbox
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.is_footprint.html">
+       is_footprint
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.is_null.html">
+       is_null
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.is_symbolic_footprint.html">
+       is_symbolic_footprint
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.layout.html">
+       layout
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.layout_obj_type.html">
+       layout_obj_type
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.msg.html">
+       msg
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.name.html">
+       name
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.simulation_setups.html">
+       simulation_setups
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.layout.Cell.temperature_settings.html">
+       temperature_settings
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layout.Layout.html">
+     ansys.edb.layout.Layout
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layout.VoltageRegulator.html">
+     ansys.edb.layout.VoltageRegulator
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layout.CellType.html">
+     ansys.edb.layout.CellType
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.layout.DesignMode.html">
+     ansys.edb.layout.DesignMode
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../layout_instance.html">
+   Layout Instance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../net.html">
+   Nets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../primitive.html">
+   Primitives
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../session.html">
+   Session
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../simulation_setup.html">
+   Simulation Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../terminal.html">
+   Terminals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../utility.html">
+   Utility
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../release_notes.html">
+   Release Notes
+  </a>
+ </li>
+</ul>
+
+    
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="ansys-edb-layout-cell">
+<h1>ansys.edb.layout.Cell<a class="headerlink" href="#ansys-edb-layout-cell" title="Permalink to this headline">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ansys.edb.layout.Cell">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.edb.layout.</span></span><span class="sig-name descname"><span class="pre">Cell</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.edb.layout.Cell" title="Permalink to this definition">#</a></dt>
+<dd><p>Cell.</p>
+<p class="rubric">Methods</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.add_menu_variable.html#ansys.edb.layout.Cell.add_menu_variable" title="ansys.edb.layout.Cell.add_menu_variable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.add_menu_variable</span></code></a>(name, values[, ...])</p></td>
+<td><p>Add new menu variable.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.add_simulation_setup.html#ansys.edb.layout.Cell.add_simulation_setup" title="ansys.edb.layout.Cell.add_simulation_setup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.add_simulation_setup</span></code></a>(setup_type, name, ...)</p></td>
+<td><p>Add a simulation setup.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.add_variable.html#ansys.edb.layout.Cell.add_variable" title="ansys.edb.layout.Cell.add_variable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.add_variable</span></code></a>(name, value[, is_param])</p></td>
+<td><p>Add new variable.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.create.html#ansys.edb.layout.Cell.create" title="ansys.edb.layout.Cell.create"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.create</span></code></a>(db, cell_type, cell_name)</p></td>
+<td><p>Create a cell.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.create_value.html#ansys.edb.layout.Cell.create_value" title="ansys.edb.layout.Cell.create_value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.create_value</span></code></a>(val)</p></td>
+<td><p>Create a <a class="reference internal" href="ansys.edb.utility.Value.html#ansys.edb.utility.Value" title="ansys.edb.utility.Value"><code class="xref py py-class docutils literal notranslate"><span class="pre">Value</span></code></a> that can reference variables in this VariableServer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.cutout.html#ansys.edb.layout.Cell.cutout" title="ansys.edb.layout.Cell.cutout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.cutout</span></code></a>(included_nets, clipped_nets, ...)</p></td>
+<td><p>Cutout an existing cell into a new cell.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.delete.html#ansys.edb.layout.Cell.delete" title="ansys.edb.layout.Cell.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.delete</span></code></a>()</p></td>
+<td><p>Delete a cell.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.delete_simulation_setup.html#ansys.edb.layout.Cell.delete_simulation_setup" title="ansys.edb.layout.Cell.delete_simulation_setup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.delete_simulation_setup</span></code></a>(name)</p></td>
+<td><p>Delete a simulation setup by name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.delete_variable.html#ansys.edb.layout.Cell.delete_variable" title="ansys.edb.layout.Cell.delete_variable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.delete_variable</span></code></a>(name)</p></td>
+<td><p>Delete an existing variable.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.find.html#ansys.edb.layout.Cell.find" title="ansys.edb.layout.Cell.find"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.find</span></code></a>(database, cell_type[, name, cell_id])</p></td>
+<td><p>Find a cell in a database by either name or id.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.generate_auto_hfss_regions.html#ansys.edb.layout.Cell.generate_auto_hfss_regions" title="ansys.edb.layout.Cell.generate_auto_hfss_regions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.generate_auto_hfss_regions</span></code></a>()</p></td>
+<td><p>Generate auto HFSS regions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.generate_via_smart_box.html#ansys.edb.layout.Cell.generate_via_smart_box" title="ansys.edb.layout.Cell.generate_via_smart_box"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.generate_via_smart_box</span></code></a>(net_name)</p></td>
+<td><p>Generate via smart box.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.get_all_variable_names.html#ansys.edb.layout.Cell.get_all_variable_names" title="ansys.edb.layout.Cell.get_all_variable_names"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.get_all_variable_names</span></code></a>()</p></td>
+<td><p>Return names of all variables that were added.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.get_product_property.html#ansys.edb.layout.Cell.get_product_property" title="ansys.edb.layout.Cell.get_product_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.get_product_property</span></code></a>(prod_id, attr_id)</p></td>
+<td><p>Get the product specific property of the cell.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.get_product_property_ids.html#ansys.edb.layout.Cell.get_product_property_ids" title="ansys.edb.layout.Cell.get_product_property_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.get_product_property_ids</span></code></a>(prod_id)</p></td>
+<td><p>Get a list of attribute ids corresponding to the provided product id for the cell.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.get_variable_desc.html#ansys.edb.layout.Cell.get_variable_desc" title="ansys.edb.layout.Cell.get_variable_desc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.get_variable_desc</span></code></a>(name)</p></td>
+<td><p>Get the description of a variable.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.get_variable_value.html#ansys.edb.layout.Cell.get_variable_value" title="ansys.edb.layout.Cell.get_variable_value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.get_variable_value</span></code></a>(name)</p></td>
+<td><p>Get the value from an existing variable.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.is_parameter.html#ansys.edb.layout.Cell.is_parameter" title="ansys.edb.layout.Cell.is_parameter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.is_parameter</span></code></a>(name)</p></td>
+<td><p>Return the type of the variable.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.set_hfss_extent_info.html#ansys.edb.layout.Cell.set_hfss_extent_info" title="ansys.edb.layout.Cell.set_hfss_extent_info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.set_hfss_extent_info</span></code></a>(**extents)</p></td>
+<td><p>Set HFSS Extents of this cell.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.set_product_property.html#ansys.edb.layout.Cell.set_product_property" title="ansys.edb.layout.Cell.set_product_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.set_product_property</span></code></a>(prod_id, attr_id, ...)</p></td>
+<td><p>Set the product property of the cell associated with the given product and attribute ids.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.set_variable_desc.html#ansys.edb.layout.Cell.set_variable_desc" title="ansys.edb.layout.Cell.set_variable_desc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.set_variable_desc</span></code></a>(name, desc)</p></td>
+<td><p>Set variable to have a new description.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.set_variable_value.html#ansys.edb.layout.Cell.set_variable_value" title="ansys.edb.layout.Cell.set_variable_value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.set_variable_value</span></code></a>(name, new_value)</p></td>
+<td><p>Set variable to have a new value.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.anti_pads_always_on.html#ansys.edb.layout.Cell.anti_pads_always_on" title="ansys.edb.layout.Cell.anti_pads_always_on"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.anti_pads_always_on</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a> : Determine whether antipads are always enabled.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.anti_pads_option.html#ansys.edb.layout.Cell.anti_pads_option" title="ansys.edb.layout.Cell.anti_pads_option"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.anti_pads_option</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a> : Mode for activating antipads.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.database.html#ansys.edb.layout.Cell.database" title="ansys.edb.layout.Cell.database"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.database</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.database.Database.html#ansys.edb.database.Database" title="ansys.edb.database.Database"><code class="xref py py-class docutils literal notranslate"><span class="pre">Database</span></code></a>: Owning database of cell.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.design_mode.html#ansys.edb.layout.Cell.design_mode" title="ansys.edb.layout.Cell.design_mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.design_mode</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.layout.DesignMode.html#ansys.edb.layout.DesignMode" title="ansys.edb.layout.DesignMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignMode</span></code></a> : Design mode of the cell.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.flattened_layout.html#ansys.edb.layout.Cell.flattened_layout" title="ansys.edb.layout.Cell.flattened_layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.flattened_layout</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.layout.Layout.html#ansys.edb.layout.Layout" title="ansys.edb.layout.Layout"><code class="xref py py-class docutils literal notranslate"><span class="pre">Layout</span></code></a>: Flattened layout of the cell.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.hfss_extent_info.html#ansys.edb.layout.Cell.hfss_extent_info" title="ansys.edb.layout.Cell.hfss_extent_info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.hfss_extent_info</span></code></a></p></td>
+<td><p><a class="reference internal" href="../glossary.html#term-HFSSExtents"><span class="xref std std-term">HFSSExtents</span></a> : HFSS Extents for the cell.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.id.html#ansys.edb.layout.Cell.id" title="ansys.edb.layout.Cell.id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.id</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>: The unique ID of an EDB object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.is_blackbox.html#ansys.edb.layout.Cell.is_blackbox" title="ansys.edb.layout.Cell.is_blackbox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.is_blackbox</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a> : Flag to indicate if the cell is a blackbox.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.is_footprint.html#ansys.edb.layout.Cell.is_footprint" title="ansys.edb.layout.Cell.is_footprint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.is_footprint</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a> : Flag to indicate if the cell is a footprint.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.is_null.html#ansys.edb.layout.Cell.is_null" title="ansys.edb.layout.Cell.is_null"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.is_null</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>: Determine whether this object exists in EDB.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.is_symbolic_footprint.html#ansys.edb.layout.Cell.is_symbolic_footprint" title="ansys.edb.layout.Cell.is_symbolic_footprint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.is_symbolic_footprint</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a> : Flag to indicate if the cell is a symbolic footprint.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.layout.html#ansys.edb.layout.Cell.layout" title="ansys.edb.layout.Cell.layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.layout</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.layout.Layout.html#ansys.edb.layout.Layout" title="ansys.edb.layout.Layout"><code class="xref py py-class docutils literal notranslate"><span class="pre">Layout</span></code></a>: Layout of the cell.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.layout_obj_type.html#ansys.edb.layout.Cell.layout_obj_type" title="ansys.edb.layout.Cell.layout_obj_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.layout_obj_type</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.msg.html#ansys.edb.layout.Cell.msg" title="ansys.edb.layout.Cell.msg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.msg</span></code></a></p></td>
+<td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDBObjMessage</span></code> : Protobuf message that represents this object's ID.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.name.html#ansys.edb.layout.Cell.name" title="ansys.edb.layout.Cell.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.name</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a> : Name of the cell.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.simulation_setups.html#ansys.edb.layout.Cell.simulation_setups" title="ansys.edb.layout.Cell.simulation_setups"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.simulation_setups</span></code></a></p></td>
+<td><p>All simulation setups of the cell.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.layout.Cell.temperature_settings.html#ansys.edb.layout.Cell.temperature_settings" title="ansys.edb.layout.Cell.temperature_settings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cell.temperature_settings</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.utility.TemperatureSettings.html#ansys.edb.utility.TemperatureSettings" title="ansys.edb.utility.TemperatureSettings"><code class="xref py py-class docutils literal notranslate"><span class="pre">TemperatureSettings</span></code></a> :Temperature settings.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</section>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright (c) 2022 ANSYS, Inc. All rights reserved.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

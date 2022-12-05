@@ -1,0 +1,43 @@
+﻿ansys.edb.simulation\_setup.SimulationSetupInfo
+===============================================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoclass:: SimulationSetupInfo
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      SimulationSetupInfo.id
+      
+      
+      SimulationSetupInfo.is_null
+      
+      
+      SimulationSetupInfo.msg
+      
+      
+      SimulationSetupInfo.simulation_settings
+      
+      
+      SimulationSetupInfo.sweep_data_list
+      
+   
+   

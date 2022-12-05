@@ -1,0 +1,6 @@
+get\_parameter\_override
+========================
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. automethod:: CellInstance.get_parameter_override

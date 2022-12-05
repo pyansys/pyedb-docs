@@ -1,0 +1,24 @@
+﻿ansys.edb.layer.RoughnessRegion
+===============================
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoclass:: RoughnessRegion
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+   
+   

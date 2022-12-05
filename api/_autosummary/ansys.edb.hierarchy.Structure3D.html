@@ -1,0 +1,656 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>ansys.edb.hierarchy.Structure3D &#8212; ansys-edb</title>
+    
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/pyansys_sphinx_theme.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    
+        <link href="../../_static/css/breadcrumbs.css" rel="stylesheet">
+    
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="add_member" href="ansys.edb.hierarchy.Structure3D.add_member.html" />
+    <link rel="prev" title="pins" href="ansys.edb.hierarchy.PinGroup.pins.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><style>
+    .navbar-light {
+        background-color: black !important;
+    }
+</style>
+
+<div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="https://docs.pyansys.com/">
+  <img src="../../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" >
+      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+    </span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../installation.html">
+  Installation
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../user_guide/user_guide.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../examples/examples.html">
+  Examples
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyansys/pyedb" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+    </nav>
+    
+    
+        <div class="container-xl">
+    <div class="row">
+        <div class="col-12 col-md-3" id="breadcrumbs-spacer"></div>
+        <div class="col-12 col-md-11 col-xl-9" id="breadcrumbs">
+          
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+    
+        <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
+    
+    
+        <li class="nav-item nav-item-0"><a href="../../index.html">ansys-edb</a> » </li>
+    
+
+          <li class="nav-item nav-item-1"><a href="../index.html" >API Reference</a> » </li>
+          <li class="nav-item nav-item-2"><a href="../hierarchy.html" accesskey="U">Hierarchy</a> » </li>
+        <li class="nav-item nav-item-this"><a href="">ansys.edb.hierarchy.Structure3D</a></li> 
+      </ul>
+    </div>
+        </div>
+  </div>
+</div>
+    
+
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../database.html">
+   Database
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../definition.html">
+   Definition
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../geometry.html">
+   Geometry
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../hierarchy.html">
+   Hierarchy
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.hierarchy.CellInstance.html">
+     ansys.edb.hierarchy.CellInstance
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.hierarchy.ComponentGroup.html">
+     ansys.edb.hierarchy.ComponentGroup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.hierarchy.Group.html">
+     ansys.edb.hierarchy.Group
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.hierarchy.PinGroup.html">
+     ansys.edb.hierarchy.PinGroup
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="current reference internal" href="#">
+     ansys.edb.hierarchy.Structure3D
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.add_member.html">
+       add_member
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.cast.html">
+       cast
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.create.html">
+       create
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.delete.html">
+       delete
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.find.html">
+       find
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.find_by_id.html">
+       find_by_id
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.get_material.html">
+       get_material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.get_product_property.html">
+       get_product_property
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.get_product_property_ids.html">
+       get_product_property_ids
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.remove_member.html">
+       remove_member
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.set_material.html">
+       set_material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.set_product_property.html">
+       set_product_property
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.ungroup.html">
+       ungroup
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.component.html">
+       component
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.component_def.html">
+       component_def
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.edb_uid.html">
+       edb_uid
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.group.html">
+       group
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.id.html">
+       id
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.is_null.html">
+       is_null
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.layout.html">
+       layout
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.layout_obj_type.html">
+       layout_obj_type
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.location.html">
+       location
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.members.html">
+       members
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.mesh_closure.html">
+       mesh_closure
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.msg.html">
+       msg
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.name.html">
+       name
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.net.html">
+       net
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.obj_type.html">
+       obj_type
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.placement_layer.html">
+       placement_layer
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.solve_independent_preference.html">
+       solve_independent_preference
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.thickness.html">
+       thickness
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.transform.html">
+       transform
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.hierarchy.ViaGroup.html">
+     ansys.edb.hierarchy.ViaGroup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.hierarchy.ComponentType.html">
+     ansys.edb.hierarchy.ComponentType
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.hierarchy.MeshClosure.html">
+     ansys.edb.hierarchy.MeshClosure
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../layer.html">
+   Layers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../layout.html">
+   Layout
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../layout_instance.html">
+   Layout Instance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../net.html">
+   Nets
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../primitive.html">
+   Primitives
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../session.html">
+   Session
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../simulation_setup.html">
+   Simulation Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../terminal.html">
+   Terminals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../utility.html">
+   Utility
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../release_notes.html">
+   Release Notes
+  </a>
+ </li>
+</ul>
+
+    
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="ansys-edb-hierarchy-structure3d">
+<h1>ansys.edb.hierarchy.Structure3D<a class="headerlink" href="#ansys-edb-hierarchy-structure3d" title="Permalink to this headline">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ansys.edb.hierarchy.Structure3D">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.edb.hierarchy.</span></span><span class="sig-name descname"><span class="pre">Structure3D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.edb.hierarchy.Structure3D" title="Permalink to this definition">#</a></dt>
+<dd><p>Class representing a structure3d object.</p>
+<p class="rubric">Methods</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.add_member.html#ansys.edb.hierarchy.Structure3D.add_member" title="ansys.edb.hierarchy.Structure3D.add_member"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.add_member</span></code></a>(member)</p></td>
+<td><p>Add an object to the group.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.cast.html#ansys.edb.hierarchy.Structure3D.cast" title="ansys.edb.hierarchy.Structure3D.cast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.cast</span></code></a>()</p></td>
+<td><p>Cast the group object to correct concrete type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.create.html#ansys.edb.hierarchy.Structure3D.create" title="ansys.edb.hierarchy.Structure3D.create"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.create</span></code></a>(layout, name)</p></td>
+<td><p>Create Structure3D.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.delete.html#ansys.edb.hierarchy.Structure3D.delete" title="ansys.edb.hierarchy.Structure3D.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.delete</span></code></a>()</p></td>
+<td><p>Delete the layout object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.find.html#ansys.edb.hierarchy.Structure3D.find" title="ansys.edb.hierarchy.Structure3D.find"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.find</span></code></a>(layout, name)</p></td>
+<td><p>Find a group by name.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.find_by_id.html#ansys.edb.hierarchy.Structure3D.find_by_id" title="ansys.edb.hierarchy.Structure3D.find_by_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.find_by_id</span></code></a>(layout, uid)</p></td>
+<td><p>Find a <a class="reference internal" href="../glossary.html#term-Connectable"><span class="xref std std-term">Connectable</span></a> object by Database ID.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.get_material.html#ansys.edb.hierarchy.Structure3D.get_material" title="ansys.edb.hierarchy.Structure3D.get_material"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.get_material</span></code></a>(evaluate)</p></td>
+<td><p>Get material for the structure3d.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.get_product_property.html#ansys.edb.hierarchy.Structure3D.get_product_property" title="ansys.edb.hierarchy.Structure3D.get_product_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.get_product_property</span></code></a>(prod_id, ...)</p></td>
+<td><p>Get the product property of the layout object with the given product and attribute ids.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.get_product_property_ids.html#ansys.edb.hierarchy.Structure3D.get_product_property_ids" title="ansys.edb.hierarchy.Structure3D.get_product_property_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.get_product_property_ids</span></code></a>(prod_id)</p></td>
+<td><p>Get a list of attribute ids corresponding to the provided product id for the layout object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.remove_member.html#ansys.edb.hierarchy.Structure3D.remove_member" title="ansys.edb.hierarchy.Structure3D.remove_member"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.remove_member</span></code></a>(member)</p></td>
+<td><p>Remove an object from the group.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.set_material.html#ansys.edb.hierarchy.Structure3D.set_material" title="ansys.edb.hierarchy.Structure3D.set_material"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.set_material</span></code></a>(mat_name)</p></td>
+<td><p>Set material for the structure3d.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.set_product_property.html#ansys.edb.hierarchy.Structure3D.set_product_property" title="ansys.edb.hierarchy.Structure3D.set_product_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.set_product_property</span></code></a>(prod_id, ...)</p></td>
+<td><p>Set the product property of the layout object associated with the given product and attribute ids.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.ungroup.html#ansys.edb.hierarchy.Structure3D.ungroup" title="ansys.edb.hierarchy.Structure3D.ungroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.ungroup</span></code></a>(recursive)</p></td>
+<td><p>Dissolves the group.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.component.html#ansys.edb.hierarchy.Structure3D.component" title="ansys.edb.hierarchy.Structure3D.component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.component</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.hierarchy.ComponentGroup.html#ansys.edb.hierarchy.ComponentGroup" title="ansys.edb.hierarchy.ComponentGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">ComponentGroup</span></code></a>: Component of the <a class="reference internal" href="../glossary.html#term-Connectable"><span class="xref std std-term">Connectable</span></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.component_def.html#ansys.edb.hierarchy.Structure3D.component_def" title="ansys.edb.hierarchy.Structure3D.component_def"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.component_def</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.definition.ComponentDef.html#ansys.edb.definition.ComponentDef" title="ansys.edb.definition.ComponentDef"><code class="xref py py-class docutils literal notranslate"><span class="pre">ComponentDef</span></code></a>: Component definition for this         object if it exists, None otherwise.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.edb_uid.html#ansys.edb.hierarchy.Structure3D.edb_uid" title="ansys.edb.hierarchy.Structure3D.edb_uid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.edb_uid</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>: The unique, persistent ID for the <a class="reference internal" href="../glossary.html#term-Connectable"><span class="xref std std-term">Connectable</span></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.group.html#ansys.edb.hierarchy.Structure3D.group" title="ansys.edb.hierarchy.Structure3D.group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.group</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.hierarchy.Group.html#ansys.edb.hierarchy.Group" title="ansys.edb.hierarchy.Group"><code class="xref py py-class docutils literal notranslate"><span class="pre">Group</span></code></a>: Group of the <a class="reference internal" href="../glossary.html#term-Connectable"><span class="xref std std-term">Connectable</span></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.id.html#ansys.edb.hierarchy.Structure3D.id" title="ansys.edb.hierarchy.Structure3D.id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.id</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>: The unique ID of an EDB object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.is_null.html#ansys.edb.hierarchy.Structure3D.is_null" title="ansys.edb.hierarchy.Structure3D.is_null"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.is_null</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>: Determine whether this object exists in EDB.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.layout.html#ansys.edb.hierarchy.Structure3D.layout" title="ansys.edb.hierarchy.Structure3D.layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.layout</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.layout.Layout.html#ansys.edb.layout.Layout" title="ansys.edb.layout.Layout"><code class="xref py py-class docutils literal notranslate"><span class="pre">Layout</span></code></a>: Owning layout of the object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.layout_obj_type.html#ansys.edb.hierarchy.Structure3D.layout_obj_type" title="ansys.edb.hierarchy.Structure3D.layout_obj_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.layout_obj_type</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.location.html#ansys.edb.hierarchy.Structure3D.location" title="ansys.edb.hierarchy.Structure3D.location"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.location</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#tuple" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code></a> (<a class="reference internal" href="ansys.edb.utility.Value.html#ansys.edb.utility.Value" title="ansys.edb.utility.Value"><code class="xref py py-class docutils literal notranslate"><span class="pre">Value</span></code></a>, <a class="reference internal" href="ansys.edb.utility.Value.html#ansys.edb.utility.Value" title="ansys.edb.utility.Value"><code class="xref py py-class docutils literal notranslate"><span class="pre">Value</span></code></a>):          [x, y] location of the object on the <a class="reference internal" href="ansys.edb.hierarchy.Structure3D.placement_layer.html#ansys.edb.hierarchy.Structure3D.placement_layer" title="ansys.edb.hierarchy.Structure3D.placement_layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">placement_layer</span></code></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.members.html#ansys.edb.hierarchy.Structure3D.members" title="ansys.edb.hierarchy.Structure3D.members"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.members</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference internal" href="../glossary.html#term-Connectable"><span class="xref std std-term">Connectables</span></a>: List of all the group members.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.mesh_closure.html#ansys.edb.hierarchy.Structure3D.mesh_closure" title="ansys.edb.hierarchy.Structure3D.mesh_closure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.mesh_closure</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.hierarchy.MeshClosure.html#ansys.edb.hierarchy.MeshClosure" title="ansys.edb.hierarchy.MeshClosure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshClosure</span></code></a>: Mesh closure property for the structure3d.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.msg.html#ansys.edb.hierarchy.Structure3D.msg" title="ansys.edb.hierarchy.Structure3D.msg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.msg</span></code></a></p></td>
+<td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDBObjMessage</span></code> : Protobuf message that represents this object's ID.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.name.html#ansys.edb.hierarchy.Structure3D.name" title="ansys.edb.hierarchy.Structure3D.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.name</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>: Name of the object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.net.html#ansys.edb.hierarchy.Structure3D.net" title="ansys.edb.hierarchy.Structure3D.net"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.net</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.net.Net.html#ansys.edb.net.Net" title="ansys.edb.net.Net"><code class="xref py py-class docutils literal notranslate"><span class="pre">Net</span></code></a>: Net of the <a class="reference internal" href="../glossary.html#term-Connectable"><span class="xref std std-term">Connectable</span></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.obj_type.html#ansys.edb.hierarchy.Structure3D.obj_type" title="ansys.edb.hierarchy.Structure3D.obj_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.obj_type</span></code></a></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">LayoutObjType</span></code>: Layout object type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.placement_layer.html#ansys.edb.hierarchy.Structure3D.placement_layer" title="ansys.edb.hierarchy.Structure3D.placement_layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.placement_layer</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.layer.Layer.html#ansys.edb.layer.Layer" title="ansys.edb.layer.Layer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Layer</span></code></a>: Placement layer for this object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.solve_independent_preference.html#ansys.edb.hierarchy.Structure3D.solve_independent_preference" title="ansys.edb.hierarchy.Structure3D.solve_independent_preference"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.solve_independent_preference</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>: Determine whether the object is assigned to solve independent of its parent context.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.thickness.html#ansys.edb.hierarchy.Structure3D.thickness" title="ansys.edb.hierarchy.Structure3D.thickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.thickness</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.utility.Value.html#ansys.edb.utility.Value" title="ansys.edb.utility.Value"><code class="xref py py-class docutils literal notranslate"><span class="pre">Value</span></code></a>: Thickness for the structure3d.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.hierarchy.Structure3D.transform.html#ansys.edb.hierarchy.Structure3D.transform" title="ansys.edb.hierarchy.Structure3D.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Structure3D.transform</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.utility.Transform.html#ansys.edb.utility.Transform" title="ansys.edb.utility.Transform"><code class="xref py py-class docutils literal notranslate"><span class="pre">Transform</span></code></a>: Transformation information of the object.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</section>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright (c) 2022 ANSYS, Inc. All rights reserved.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

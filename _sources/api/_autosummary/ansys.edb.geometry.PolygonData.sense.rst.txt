@@ -1,0 +1,6 @@
+sense
+=====
+
+.. currentmodule:: ansys.edb.geometry
+
+.. autoproperty:: PolygonData.sense

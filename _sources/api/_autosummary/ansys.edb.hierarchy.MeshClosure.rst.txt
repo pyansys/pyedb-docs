@@ -1,0 +1,25 @@
+﻿ansys.edb.hierarchy.MeshClosure
+===============================
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoclass:: MeshClosure
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+   
+   

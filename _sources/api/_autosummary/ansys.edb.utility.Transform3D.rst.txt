@@ -1,0 +1,22 @@
+﻿ansys.edb.utility.Transform3D
+=============================
+
+.. currentmodule:: ansys.edb.utility
+
+.. autoclass:: Transform3D
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   

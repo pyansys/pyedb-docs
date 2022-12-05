@@ -1,0 +1,22 @@
+﻿ansys.edb.simulation\_setup.AdaptiveFrequencyData
+=================================================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoclass:: AdaptiveFrequencyData
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+adaptive\_frequency\_data\_list
+===============================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoproperty:: AdaptiveSettings.adaptive_frequency_data_list

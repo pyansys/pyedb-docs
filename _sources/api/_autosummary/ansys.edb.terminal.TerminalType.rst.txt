@@ -1,0 +1,27 @@
+﻿ansys.edb.terminal.TerminalType
+===============================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoclass:: TerminalType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+      
+   
+   

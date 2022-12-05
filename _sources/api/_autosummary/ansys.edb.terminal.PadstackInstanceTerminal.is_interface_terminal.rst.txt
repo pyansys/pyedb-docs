@@ -1,0 +1,6 @@
+is\_interface\_terminal
+=======================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: PadstackInstanceTerminal.is_interface_terminal

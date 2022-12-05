@@ -1,0 +1,33 @@
+﻿ansys.edb.definition.PadGeometryType
+====================================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: PadGeometryType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+   
+   

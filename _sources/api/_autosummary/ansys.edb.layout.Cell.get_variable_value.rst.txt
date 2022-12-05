@@ -1,0 +1,6 @@
+get\_variable\_value
+====================
+
+.. currentmodule:: ansys.edb.layout
+
+.. automethod:: Cell.get_variable_value

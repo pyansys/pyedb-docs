@@ -1,0 +1,28 @@
+﻿ansys.edb.hierarchy.ComponentType
+=================================
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoclass:: ComponentType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+      
+      
+   
+   

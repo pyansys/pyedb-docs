@@ -1,0 +1,6 @@
+subtract
+========
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PolygonData.subtract

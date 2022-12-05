@@ -1,0 +1,6 @@
+component\_models
+=================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: ComponentDef.component_models

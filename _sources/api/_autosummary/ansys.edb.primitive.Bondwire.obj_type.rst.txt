@@ -1,0 +1,6 @@
+obj\_type
+=========
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: Bondwire.obj_type

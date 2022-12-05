@@ -1,0 +1,6 @@
+sweep\_data\_list
+=================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoproperty:: SimulationSetupInfo.sweep_data_list

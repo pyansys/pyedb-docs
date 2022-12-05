@@ -1,0 +1,6 @@
+members
+=======
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: Structure3D.members

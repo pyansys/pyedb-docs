@@ -1,0 +1,24 @@
+﻿ansys.edb.primitive.RectangleRepresentationType
+===============================================
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoclass:: RectangleRepresentationType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+   
+   

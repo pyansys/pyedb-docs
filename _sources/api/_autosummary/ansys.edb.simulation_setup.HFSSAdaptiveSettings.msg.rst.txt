@@ -1,0 +1,6 @@
+msg
+===
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoproperty:: HFSSAdaptiveSettings.msg

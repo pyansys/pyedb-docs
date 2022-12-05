@@ -1,0 +1,6 @@
+save
+====
+
+.. currentmodule:: ansys.edb.database
+
+.. automethod:: Database.save

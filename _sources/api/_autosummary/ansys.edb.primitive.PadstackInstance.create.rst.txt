@@ -1,0 +1,6 @@
+create
+======
+
+.. currentmodule:: ansys.edb.primitive
+
+.. automethod:: PadstackInstance.create

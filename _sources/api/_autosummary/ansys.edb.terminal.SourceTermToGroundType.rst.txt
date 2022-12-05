@@ -1,0 +1,24 @@
+﻿ansys.edb.terminal.SourceTermToGroundType
+=========================================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoclass:: SourceTermToGroundType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+   
+   

@@ -1,0 +1,6 @@
+primitive\_type
+===============
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: Text.primitive_type

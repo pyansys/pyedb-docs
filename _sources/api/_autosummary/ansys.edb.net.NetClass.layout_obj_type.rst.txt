@@ -1,0 +1,6 @@
+layout\_obj\_type
+=================
+
+.. currentmodule:: ansys.edb.net
+
+.. autoattribute:: NetClass.layout_obj_type

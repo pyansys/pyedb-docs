@@ -1,0 +1,6 @@
+reference\_layer
+================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: PadstackInstanceTerminal.reference_layer

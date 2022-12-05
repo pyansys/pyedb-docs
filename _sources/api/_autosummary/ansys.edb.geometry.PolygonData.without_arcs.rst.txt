@@ -1,0 +1,6 @@
+without\_arcs
+=============
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PolygonData.without_arcs

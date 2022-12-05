@@ -1,0 +1,6 @@
+die\_orientation
+================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: DieProperty.die_orientation

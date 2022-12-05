@@ -1,0 +1,6 @@
+msg
+===
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoproperty:: StackupLayer.msg

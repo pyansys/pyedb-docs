@@ -1,0 +1,6 @@
+group
+=====
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: Group.group

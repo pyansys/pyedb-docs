@@ -1,0 +1,6 @@
+distance
+========
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PointData.distance

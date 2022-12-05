@@ -1,0 +1,6 @@
+remove\_self\_intersections
+===========================
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PolygonData.remove_self_intersections

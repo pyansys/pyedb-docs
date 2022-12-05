@@ -1,0 +1,6 @@
+delete
+======
+
+.. currentmodule:: ansys.edb.terminal
+
+.. automethod:: PadstackInstanceTerminal.delete

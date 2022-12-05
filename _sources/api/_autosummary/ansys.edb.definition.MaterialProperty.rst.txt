@@ -1,0 +1,33 @@
+﻿ansys.edb.definition.MaterialProperty
+=====================================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: MaterialProperty
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+   
+   

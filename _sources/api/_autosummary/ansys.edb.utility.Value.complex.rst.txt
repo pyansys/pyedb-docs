@@ -1,0 +1,6 @@
+complex
+=======
+
+.. currentmodule:: ansys.edb.utility
+
+.. autoproperty:: Value.complex

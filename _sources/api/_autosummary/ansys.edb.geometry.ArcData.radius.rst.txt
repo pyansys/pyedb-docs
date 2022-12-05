@@ -1,0 +1,6 @@
+radius
+======
+
+.. currentmodule:: ansys.edb.geometry
+
+.. autoproperty:: ArcData.radius

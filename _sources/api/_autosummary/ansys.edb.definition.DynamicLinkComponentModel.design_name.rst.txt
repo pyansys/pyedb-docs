@@ -1,0 +1,6 @@
+design\_name
+============
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: DynamicLinkComponentModel.design_name

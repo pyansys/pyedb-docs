@@ -1,0 +1,22 @@
+﻿ansys.edb.simulation\_setup.MeshOperation
+=========================================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoclass:: MeshOperation
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   

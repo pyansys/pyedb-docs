@@ -1,0 +1,6 @@
+type
+====
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoattribute:: PrimitiveEdge.type

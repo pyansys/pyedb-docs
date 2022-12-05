@@ -1,0 +1,49 @@
+﻿ansys.edb.layout\_instance.LayoutObjInstance2DGeometry
+======================================================
+
+.. currentmodule:: ansys.edb.layout_instance
+
+.. autoclass:: LayoutObjInstance2DGeometry
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      LayoutObjInstance2DGeometry.get_polygon_data
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      LayoutObjInstance2DGeometry.color
+      
+      
+      LayoutObjInstance2DGeometry.id
+      
+      
+      LayoutObjInstance2DGeometry.is_negative
+      
+      
+      LayoutObjInstance2DGeometry.is_null
+      
+      
+      LayoutObjInstance2DGeometry.material
+      
+      
+      LayoutObjInstance2DGeometry.msg
+      
+   
+   

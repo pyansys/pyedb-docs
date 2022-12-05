@@ -1,0 +1,6 @@
+move
+====
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PolygonData.move

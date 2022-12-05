@@ -1,0 +1,22 @@
+﻿ansys.edb.utility.Transform
+===========================
+
+.. currentmodule:: ansys.edb.utility
+
+.. autoclass:: Transform
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   

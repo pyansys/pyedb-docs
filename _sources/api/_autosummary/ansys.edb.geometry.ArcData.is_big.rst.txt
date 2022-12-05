@@ -1,0 +1,6 @@
+is\_big
+=======
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: ArcData.is_big

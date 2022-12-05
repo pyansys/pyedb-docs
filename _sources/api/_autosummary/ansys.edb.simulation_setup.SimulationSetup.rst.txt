@@ -1,0 +1,52 @@
+﻿ansys.edb.simulation\_setup.SimulationSetup
+===========================================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoclass:: SimulationSetup
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      SimulationSetup.adaptive_frequency
+      
+      
+      SimulationSetup.create
+      
+      
+      SimulationSetup.frequency_sweep
+      
+      
+      SimulationSetup.mesh_operation
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      SimulationSetup.id
+      
+      
+      SimulationSetup.is_null
+      
+      
+      SimulationSetup.msg
+      
+      
+      SimulationSetup.simulation_setup_info
+      
+   
+   

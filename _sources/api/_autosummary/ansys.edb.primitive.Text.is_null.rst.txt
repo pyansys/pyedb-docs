@@ -1,0 +1,6 @@
+is\_null
+========
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: Text.is_null

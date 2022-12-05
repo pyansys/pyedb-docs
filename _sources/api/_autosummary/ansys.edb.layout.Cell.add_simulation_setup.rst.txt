@@ -1,0 +1,6 @@
+add\_simulation\_setup
+======================
+
+.. currentmodule:: ansys.edb.layout
+
+.. automethod:: Cell.add_simulation_setup

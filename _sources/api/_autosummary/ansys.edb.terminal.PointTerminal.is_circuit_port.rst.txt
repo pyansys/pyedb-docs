@@ -1,0 +1,6 @@
+is\_circuit\_port
+=================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: PointTerminal.is_circuit_port

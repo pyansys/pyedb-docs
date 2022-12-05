@@ -1,0 +1,6 @@
+pin\_groups
+===========
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: PadstackInstance.pin_groups

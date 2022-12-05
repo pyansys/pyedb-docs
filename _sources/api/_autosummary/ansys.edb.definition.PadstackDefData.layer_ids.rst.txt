@@ -1,0 +1,6 @@
+layer\_ids
+==========
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: PadstackDefData.layer_ids

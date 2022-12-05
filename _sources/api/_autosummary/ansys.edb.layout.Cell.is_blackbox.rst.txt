@@ -1,0 +1,6 @@
+is\_blackbox
+============
+
+.. currentmodule:: ansys.edb.layout
+
+.. autoproperty:: Cell.is_blackbox

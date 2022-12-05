@@ -1,0 +1,6 @@
+impedance
+=========
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: Terminal.impedance

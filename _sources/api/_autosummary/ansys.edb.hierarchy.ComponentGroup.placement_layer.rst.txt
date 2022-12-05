@@ -1,0 +1,6 @@
+placement\_layer
+================
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: ComponentGroup.placement_layer

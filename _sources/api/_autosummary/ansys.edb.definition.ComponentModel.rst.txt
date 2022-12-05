@@ -1,0 +1,40 @@
+﻿ansys.edb.definition.ComponentModel
+===================================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: ComponentModel
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      ComponentModel.id
+      
+      
+      ComponentModel.is_null
+      
+      
+      ComponentModel.msg
+      
+      
+      ComponentModel.reference_file
+      
+   
+   

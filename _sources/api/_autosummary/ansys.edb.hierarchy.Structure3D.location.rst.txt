@@ -1,0 +1,6 @@
+location
+========
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: Structure3D.location

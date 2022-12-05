@@ -1,0 +1,6 @@
+number
+======
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: ComponentPin.number

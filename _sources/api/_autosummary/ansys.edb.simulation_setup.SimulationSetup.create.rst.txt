@@ -1,0 +1,6 @@
+create
+======
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. automethod:: SimulationSetup.create

@@ -1,0 +1,24 @@
+﻿ansys.edb.layer.DCThicknessType
+===============================
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoclass:: DCThicknessType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+   
+   

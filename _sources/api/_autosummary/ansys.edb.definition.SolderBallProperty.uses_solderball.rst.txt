@@ -1,0 +1,6 @@
+uses\_solderball
+================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: SolderBallProperty.uses_solderball

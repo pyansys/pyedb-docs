@@ -1,0 +1,6 @@
+is\_complex
+===========
+
+.. currentmodule:: ansys.edb.utility
+
+.. autoproperty:: Value.is_complex

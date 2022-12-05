@@ -1,0 +1,6 @@
+adaptive\_frequency
+===================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. automethod:: SimulationSetup.adaptive_frequency

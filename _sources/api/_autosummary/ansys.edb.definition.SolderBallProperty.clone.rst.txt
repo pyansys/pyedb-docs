@@ -1,0 +1,6 @@
+clone
+=====
+
+.. currentmodule:: ansys.edb.definition
+
+.. automethod:: SolderBallProperty.clone

@@ -1,0 +1,6 @@
+bondwire\_type
+==============
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: ApdBondwireDef.bondwire_type

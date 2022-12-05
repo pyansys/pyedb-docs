@@ -1,0 +1,6 @@
+ungroup
+=======
+
+.. currentmodule:: ansys.edb.terminal
+
+.. automethod:: BundleTerminal.ungroup

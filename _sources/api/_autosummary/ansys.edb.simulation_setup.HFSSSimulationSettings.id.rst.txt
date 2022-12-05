@@ -1,0 +1,6 @@
+id
+==
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoproperty:: HFSSSimulationSettings.id

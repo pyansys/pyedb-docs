@@ -1,0 +1,6 @@
+end
+===
+
+.. currentmodule:: ansys.edb.geometry
+
+.. autoproperty:: ArcData.end

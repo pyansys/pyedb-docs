@@ -1,0 +1,40 @@
+﻿ansys.edb.simulation\_setup.AdaptiveSettings
+============================================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoclass:: AdaptiveSettings
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      AdaptiveSettings.adaptive_frequency_data_list
+      
+      
+      AdaptiveSettings.id
+      
+      
+      AdaptiveSettings.is_null
+      
+      
+      AdaptiveSettings.msg
+      
+   
+   

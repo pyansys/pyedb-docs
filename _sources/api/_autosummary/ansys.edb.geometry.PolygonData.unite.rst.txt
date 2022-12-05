@@ -1,0 +1,6 @@
+unite
+=====
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PolygonData.unite

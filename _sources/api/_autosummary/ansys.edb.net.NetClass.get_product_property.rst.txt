@@ -1,0 +1,6 @@
+get\_product\_property
+======================
+
+.. currentmodule:: ansys.edb.net
+
+.. automethod:: NetClass.get_product_property

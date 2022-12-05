@@ -1,0 +1,22 @@
+﻿ansys.edb.simulation\_setup.SimulationSetupType
+===============================================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoclass:: SimulationSetupType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   

@@ -1,0 +1,6 @@
+net
+===
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: Structure3D.net

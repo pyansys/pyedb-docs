@@ -1,0 +1,26 @@
+﻿ansys.edb.definition.PadType
+============================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: PadType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+   
+   

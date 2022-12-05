@@ -1,0 +1,6 @@
+arc\_height
+===========
+
+.. currentmodule:: ansys.edb.geometry
+
+.. autoproperty:: PointData.arc_height

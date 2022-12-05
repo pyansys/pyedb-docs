@@ -1,0 +1,6 @@
+component\_def
+==============
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: CellInstance.component_def

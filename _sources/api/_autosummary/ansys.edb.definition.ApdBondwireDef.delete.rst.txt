@@ -1,0 +1,6 @@
+delete
+======
+
+.. currentmodule:: ansys.edb.definition
+
+.. automethod:: ApdBondwireDef.delete

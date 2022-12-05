@@ -1,0 +1,40 @@
+﻿ansys.edb.layer.LayerType
+=========================
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoclass:: LayerType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+   
+   

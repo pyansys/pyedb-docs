@@ -1,0 +1,6 @@
+is\_parameter
+=============
+
+.. currentmodule:: ansys.edb.layout
+
+.. automethod:: Layout.is_parameter

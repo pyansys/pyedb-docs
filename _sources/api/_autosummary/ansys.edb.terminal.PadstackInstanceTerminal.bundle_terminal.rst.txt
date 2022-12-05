@@ -1,0 +1,6 @@
+bundle\_terminal
+================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: PadstackInstanceTerminal.bundle_terminal

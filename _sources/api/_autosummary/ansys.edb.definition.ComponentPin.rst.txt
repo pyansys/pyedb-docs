@@ -1,0 +1,52 @@
+﻿ansys.edb.definition.ComponentPin
+=================================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: ComponentPin
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      ComponentPin.create
+      
+      
+      ComponentPin.find
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      ComponentPin.component_def
+      
+      
+      ComponentPin.id
+      
+      
+      ComponentPin.is_null
+      
+      
+      ComponentPin.msg
+      
+      
+      ComponentPin.name
+      
+      
+      ComponentPin.number
+      
+   
+   

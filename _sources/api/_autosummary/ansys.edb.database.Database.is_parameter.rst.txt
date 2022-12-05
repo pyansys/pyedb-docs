@@ -1,0 +1,6 @@
+is\_parameter
+=============
+
+.. currentmodule:: ansys.edb.database
+
+.. automethod:: Database.is_parameter

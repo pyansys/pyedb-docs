@@ -1,0 +1,97 @@
+﻿ansys.edb.layout.VoltageRegulator
+=================================
+
+.. currentmodule:: ansys.edb.layout
+
+.. autoclass:: VoltageRegulator
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      VoltageRegulator.create
+      
+      
+      VoltageRegulator.delete
+      
+      
+      VoltageRegulator.find_by_id
+      
+      
+      VoltageRegulator.get_product_property
+      
+      
+      VoltageRegulator.get_product_property_ids
+      
+      
+      VoltageRegulator.set_product_property
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      VoltageRegulator.active
+      
+      
+      VoltageRegulator.component
+      
+      
+      VoltageRegulator.edb_uid
+      
+      
+      VoltageRegulator.group
+      
+      
+      VoltageRegulator.id
+      
+      
+      VoltageRegulator.is_null
+      
+      
+      VoltageRegulator.layout
+      
+      
+      VoltageRegulator.layout_obj_type
+      
+      
+      VoltageRegulator.lrc
+      
+      
+      VoltageRegulator.lrp
+      
+      
+      VoltageRegulator.msg
+      
+      
+      VoltageRegulator.name
+      
+      
+      VoltageRegulator.neg_remote_sense_pin
+      
+      
+      VoltageRegulator.net
+      
+      
+      VoltageRegulator.obj_type
+      
+      
+      VoltageRegulator.pos_remote_sense_pin
+      
+      
+      VoltageRegulator.voltage
+      
+   
+   

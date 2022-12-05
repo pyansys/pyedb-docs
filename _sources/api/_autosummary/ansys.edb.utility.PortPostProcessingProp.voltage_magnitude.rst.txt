@@ -1,0 +1,6 @@
+voltage\_magnitude
+==================
+
+.. currentmodule:: ansys.edb.utility
+
+.. autoproperty:: PortPostProcessingProp.voltage_magnitude

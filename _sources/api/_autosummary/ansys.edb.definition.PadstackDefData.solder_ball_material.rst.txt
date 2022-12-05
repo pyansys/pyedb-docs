@@ -1,0 +1,6 @@
+solder\_ball\_material
+======================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: PadstackDefData.solder_ball_material

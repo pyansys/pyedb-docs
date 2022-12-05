@@ -1,0 +1,40 @@
+﻿ansys.edb.simulation\_setup.HFSSAdaptiveSettings
+================================================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoclass:: HFSSAdaptiveSettings
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      HFSSAdaptiveSettings.adaptive_frequency_data_list
+      
+      
+      HFSSAdaptiveSettings.id
+      
+      
+      HFSSAdaptiveSettings.is_null
+      
+      
+      HFSSAdaptiveSettings.msg
+      
+   
+   

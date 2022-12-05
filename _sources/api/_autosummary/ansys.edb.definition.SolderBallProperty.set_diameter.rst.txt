@@ -1,0 +1,6 @@
+set\_diameter
+=============
+
+.. currentmodule:: ansys.edb.definition
+
+.. automethod:: SolderBallProperty.set_diameter

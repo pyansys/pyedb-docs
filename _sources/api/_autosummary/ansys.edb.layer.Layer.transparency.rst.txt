@@ -1,0 +1,6 @@
+transparency
+============
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoproperty:: Layer.transparency

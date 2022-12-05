@@ -1,0 +1,6 @@
+transform
+=========
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: Structure3D.transform

@@ -1,0 +1,6 @@
+msg
+===
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: PinGroup.msg

@@ -1,0 +1,6 @@
+adaptive\_settings
+==================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoproperty:: HFSSSimulationSettings.adaptive_settings

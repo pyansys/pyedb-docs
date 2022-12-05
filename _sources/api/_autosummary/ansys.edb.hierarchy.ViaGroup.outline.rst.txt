@@ -1,0 +1,6 @@
+outline
+=======
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: ViaGroup.outline

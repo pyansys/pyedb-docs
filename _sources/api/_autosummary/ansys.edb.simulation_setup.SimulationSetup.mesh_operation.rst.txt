@@ -1,0 +1,6 @@
+mesh\_operation
+===============
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. automethod:: SimulationSetup.mesh_operation

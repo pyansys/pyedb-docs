@@ -1,0 +1,6 @@
+midpoint
+========
+
+.. currentmodule:: ansys.edb.geometry
+
+.. autoproperty:: ArcData.midpoint

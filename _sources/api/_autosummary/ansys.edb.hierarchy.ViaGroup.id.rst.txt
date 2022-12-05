@@ -1,0 +1,6 @@
+id
+==
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: ViaGroup.id

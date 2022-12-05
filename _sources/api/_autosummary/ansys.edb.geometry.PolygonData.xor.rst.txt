@@ -1,0 +1,6 @@
+xor
+===
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PolygonData.xor

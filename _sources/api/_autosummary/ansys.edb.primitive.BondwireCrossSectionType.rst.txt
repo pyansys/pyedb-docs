@@ -1,0 +1,24 @@
+﻿ansys.edb.primitive.BondwireCrossSectionType
+============================================
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoclass:: BondwireCrossSectionType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+   
+   

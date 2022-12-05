@@ -1,0 +1,6 @@
+find
+====
+
+.. currentmodule:: ansys.edb.definition
+
+.. automethod:: ComponentPin.find

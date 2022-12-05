@@ -1,0 +1,6 @@
+edges
+=====
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: EdgeTerminal.edges

@@ -1,0 +1,6 @@
+layout\_obj\_type
+=================
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoattribute:: Path.layout_obj_type

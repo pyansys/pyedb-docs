@@ -1,0 +1,26 @@
+﻿ansys.edb.layer.TopBottomAssociation
+====================================
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoclass:: TopBottomAssociation
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+   
+   

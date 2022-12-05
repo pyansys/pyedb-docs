@@ -1,0 +1,6 @@
+open
+====
+
+.. currentmodule:: ansys.edb.database
+
+.. automethod:: Database.open

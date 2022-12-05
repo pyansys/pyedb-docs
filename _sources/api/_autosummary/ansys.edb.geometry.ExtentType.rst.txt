@@ -1,0 +1,23 @@
+﻿ansys.edb.geometry.ExtentType
+=============================
+
+.. currentmodule:: ansys.edb.geometry
+
+.. autoclass:: ExtentType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+   
+   

@@ -1,0 +1,30 @@
+﻿ansys.edb.terminal.BoundaryType
+===============================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoclass:: BoundaryType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+   
+   

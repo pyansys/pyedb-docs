@@ -1,0 +1,6 @@
+material\_name
+==============
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: SolderBallProperty.material_name

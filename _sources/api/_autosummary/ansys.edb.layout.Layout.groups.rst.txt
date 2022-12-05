@@ -1,0 +1,6 @@
+groups
+======
+
+.. currentmodule:: ansys.edb.layout
+
+.. autoproperty:: Layout.groups

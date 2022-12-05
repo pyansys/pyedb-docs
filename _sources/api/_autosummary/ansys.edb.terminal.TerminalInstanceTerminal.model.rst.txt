@@ -1,0 +1,6 @@
+model
+=====
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: TerminalInstanceTerminal.model

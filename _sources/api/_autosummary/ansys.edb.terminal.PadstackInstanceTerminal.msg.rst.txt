@@ -1,0 +1,6 @@
+msg
+===
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: PadstackInstanceTerminal.msg

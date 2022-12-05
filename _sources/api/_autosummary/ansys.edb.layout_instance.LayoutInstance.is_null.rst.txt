@@ -1,0 +1,6 @@
+is\_null
+========
+
+.. currentmodule:: ansys.edb.layout_instance
+
+.. autoproperty:: LayoutInstance.is_null

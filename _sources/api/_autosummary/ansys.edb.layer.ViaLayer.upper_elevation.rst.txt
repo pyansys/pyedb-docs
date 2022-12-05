@@ -1,0 +1,6 @@
+upper\_elevation
+================
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoproperty:: ViaLayer.upper_elevation

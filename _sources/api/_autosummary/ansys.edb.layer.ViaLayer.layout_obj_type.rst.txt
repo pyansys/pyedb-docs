@@ -1,0 +1,6 @@
+layout\_obj\_type
+=================
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoattribute:: ViaLayer.layout_obj_type

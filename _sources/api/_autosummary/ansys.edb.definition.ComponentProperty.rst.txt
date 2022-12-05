@@ -1,0 +1,40 @@
+﻿ansys.edb.definition.ComponentProperty
+======================================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: ComponentProperty
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      ComponentProperty.clone
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      ComponentProperty.id
+      
+      
+      ComponentProperty.is_null
+      
+      
+      ComponentProperty.msg
+      
+   
+   

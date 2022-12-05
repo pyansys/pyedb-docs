@@ -1,0 +1,6 @@
+render
+======
+
+.. currentmodule:: ansys.edb.primitive
+
+.. automethod:: Path.render

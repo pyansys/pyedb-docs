@@ -1,0 +1,6 @@
+value
+=====
+
+.. currentmodule:: ansys.edb.utility
+
+.. autoproperty:: Value.value

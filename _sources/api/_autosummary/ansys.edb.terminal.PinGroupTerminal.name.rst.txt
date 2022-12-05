@@ -1,0 +1,6 @@
+name
+====
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: PinGroupTerminal.name

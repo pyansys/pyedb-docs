@@ -1,0 +1,6 @@
+get\_end\_elevation
+===================
+
+.. currentmodule:: ansys.edb.primitive
+
+.. automethod:: Bondwire.get_end_elevation

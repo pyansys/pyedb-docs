@@ -1,0 +1,6 @@
+add\_variable
+=============
+
+.. currentmodule:: ansys.edb.database
+
+.. automethod:: Database.add_variable

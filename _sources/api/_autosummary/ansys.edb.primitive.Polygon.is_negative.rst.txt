@@ -1,0 +1,6 @@
+is\_negative
+============
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: Polygon.is_negative

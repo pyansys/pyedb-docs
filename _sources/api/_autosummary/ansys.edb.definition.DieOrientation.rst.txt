@@ -1,0 +1,23 @@
+﻿ansys.edb.definition.DieOrientation
+===================================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoclass:: DieOrientation
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+   
+   

@@ -1,0 +1,6 @@
+top\_bottom\_association
+========================
+
+.. currentmodule:: ansys.edb.layer
+
+.. autoproperty:: StackupLayer.top_bottom_association

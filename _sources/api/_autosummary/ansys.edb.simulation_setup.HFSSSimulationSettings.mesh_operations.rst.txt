@@ -1,0 +1,6 @@
+mesh\_operations
+================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoproperty:: HFSSSimulationSettings.mesh_operations

@@ -1,0 +1,6 @@
+simulation\_setup\_info
+=======================
+
+.. currentmodule:: ansys.edb.simulation_setup
+
+.. autoproperty:: SimulationSetup.simulation_setup_info

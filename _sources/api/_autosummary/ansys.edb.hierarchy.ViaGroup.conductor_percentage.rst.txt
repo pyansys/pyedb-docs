@@ -1,0 +1,6 @@
+conductor\_percentage
+=====================
+
+.. currentmodule:: ansys.edb.hierarchy
+
+.. autoproperty:: ViaGroup.conductor_percentage

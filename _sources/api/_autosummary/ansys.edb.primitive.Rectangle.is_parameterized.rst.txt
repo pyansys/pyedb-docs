@@ -1,0 +1,6 @@
+is\_parameterized
+=================
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: Rectangle.is_parameterized

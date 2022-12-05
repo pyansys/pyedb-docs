@@ -1,0 +1,24 @@
+﻿ansys.edb.geometry.PolygonSenseType
+===================================
+
+.. currentmodule:: ansys.edb.geometry
+
+.. autoclass:: PolygonSenseType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+   
+   

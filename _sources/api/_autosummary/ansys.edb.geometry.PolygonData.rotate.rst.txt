@@ -1,0 +1,6 @@
+rotate
+======
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PolygonData.rotate

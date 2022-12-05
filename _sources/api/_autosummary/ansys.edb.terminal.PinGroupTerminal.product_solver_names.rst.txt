@@ -1,0 +1,6 @@
+product\_solver\_names
+======================
+
+.. currentmodule:: ansys.edb.terminal
+
+.. automethod:: PinGroupTerminal.product_solver_names

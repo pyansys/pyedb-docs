@@ -1,0 +1,6 @@
+closest\_point
+==============
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PolygonData.closest_point

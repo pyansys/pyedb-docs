@@ -1,0 +1,6 @@
+cross
+=====
+
+.. currentmodule:: ansys.edb.geometry
+
+.. automethod:: PointData.cross

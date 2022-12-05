@@ -1,0 +1,6 @@
+params
+======
+
+.. currentmodule:: ansys.edb.terminal
+
+.. autoproperty:: PadstackInstanceTerminal.params

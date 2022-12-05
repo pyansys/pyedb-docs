@@ -1,0 +1,6 @@
+solder\_ball\_shape
+===================
+
+.. currentmodule:: ansys.edb.definition
+
+.. autoproperty:: PadstackDefData.solder_ball_shape

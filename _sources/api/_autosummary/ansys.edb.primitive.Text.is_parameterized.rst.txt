@@ -1,0 +1,6 @@
+is\_parameterized
+=================
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: Text.is_parameterized

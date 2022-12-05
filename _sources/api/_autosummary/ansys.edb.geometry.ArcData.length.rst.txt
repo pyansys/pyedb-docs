@@ -1,0 +1,6 @@
+length
+======
+
+.. currentmodule:: ansys.edb.geometry
+
+.. autoproperty:: ArcData.length

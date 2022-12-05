@@ -1,0 +1,49 @@
+﻿ansys.edb.layout\_instance.LayoutInstance
+=========================================
+
+.. currentmodule:: ansys.edb.layout_instance
+
+.. autoclass:: LayoutInstance
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      LayoutInstance.get_connected_objects
+      
+      
+      LayoutInstance.get_layout_obj_instance_in_context
+      
+      
+      LayoutInstance.query_layout_obj_instances
+      
+      
+      LayoutInstance.refresh
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      LayoutInstance.id
+      
+      
+      LayoutInstance.is_null
+      
+      
+      LayoutInstance.msg
+      
+   
+   

@@ -1,0 +1,26 @@
+﻿ansys.edb.database.ProductIdType
+================================
+
+.. currentmodule:: ansys.edb.database
+
+.. autoclass:: ProductIdType
+
+   
+
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree:
+   
+      
+      
+      
+      
+      
+   
+   

@@ -1,0 +1,6 @@
+owner
+=====
+
+.. currentmodule:: ansys.edb.primitive
+
+.. autoproperty:: BoardBendDef.owner

@@ -1,0 +1,760 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>ansys.edb.primitive.Path &#8212; ansys-edb</title>
+    
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/pyansys_sphinx_theme.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    
+        <link href="../../_static/css/breadcrumbs.css" rel="stylesheet">
+    
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="add_void" href="ansys.edb.primitive.Path.add_void.html" />
+    <link rel="prev" title="voids" href="ansys.edb.primitive.PadstackInstance.voids.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><style>
+    .navbar-light {
+        background-color: black !important;
+    }
+</style>
+
+<div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="https://docs.pyansys.com/">
+  <img src="../../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" >
+      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+    </span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../installation.html">
+  Installation
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../user_guide/user_guide.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../examples/examples.html">
+  Examples
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyansys/pyedb" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+    </nav>
+    
+    
+        <div class="container-xl">
+    <div class="row">
+        <div class="col-12 col-md-3" id="breadcrumbs-spacer"></div>
+        <div class="col-12 col-md-11 col-xl-9" id="breadcrumbs">
+          
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+    
+        <li class="nav-item nav-item-additional-breadcrumb"><a href="https://docs.pyansys.com/">PyAnsys</a> » </li>
+    
+    
+        <li class="nav-item nav-item-0"><a href="../../index.html">ansys-edb</a> » </li>
+    
+
+          <li class="nav-item nav-item-1"><a href="../index.html" >API Reference</a> » </li>
+          <li class="nav-item nav-item-2"><a href="../primitive.html" accesskey="U">Primitives</a> » </li>
+        <li class="nav-item nav-item-this"><a href="">ansys.edb.primitive.Path</a></li> 
+      </ul>
+    </div>
+        </div>
+  </div>
+</div>
+    
+
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../database.html">
+   Database
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../definition.html">
+   Definition
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../geometry.html">
+   Geometry
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hierarchy.html">
+   Hierarchy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../layer.html">
+   Layers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../layout.html">
+   Layout
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../layout_instance.html">
+   Layout Instance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../net.html">
+   Nets
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../primitive.html">
+   Primitives
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.BoardBendDef.html">
+     ansys.edb.primitive.BoardBendDef
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.Bondwire.html">
+     ansys.edb.primitive.Bondwire
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.Circle.html">
+     ansys.edb.primitive.Circle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.PadstackInstance.html">
+     ansys.edb.primitive.PadstackInstance
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="current reference internal" href="#">
+     ansys.edb.primitive.Path
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.add_void.html">
+       add_void
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.cast.html">
+       cast
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.create.html">
+       create
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.delete.html">
+       delete
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.find_by_id.html">
+       find_by_id
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.get_clip_info.html">
+       get_clip_info
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.get_end_cap_style.html">
+       get_end_cap_style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.get_hfss_prop.html">
+       get_hfss_prop
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.get_product_property.html">
+       get_product_property
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.get_product_property_ids.html">
+       get_product_property_ids
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.remove_hfss_prop.html">
+       remove_hfss_prop
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.render.html">
+       render
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.set_clip_info.html">
+       set_clip_info
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.set_end_cap_style.html">
+       set_end_cap_style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.set_hfss_prop.html">
+       set_hfss_prop
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.set_product_property.html">
+       set_product_property
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.can_be_zone_primitive.html">
+       can_be_zone_primitive
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.center_line.html">
+       center_line
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.component.html">
+       component
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.corner_style.html">
+       corner_style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.edb_uid.html">
+       edb_uid
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.group.html">
+       group
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.has_voids.html">
+       has_voids
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.id.html">
+       id
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.is_negative.html">
+       is_negative
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.is_null.html">
+       is_null
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.is_parameterized.html">
+       is_parameterized
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.is_void.html">
+       is_void
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.is_zone_primitive.html">
+       is_zone_primitive
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.layer.html">
+       layer
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.layout.html">
+       layout
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.layout_obj_type.html">
+       layout_obj_type
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.miter_ratio.html">
+       miter_ratio
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.msg.html">
+       msg
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.net.html">
+       net
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.obj_type.html">
+       obj_type
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.owner.html">
+       owner
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.primitive_type.html">
+       primitive_type
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.voids.html">
+       voids
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ansys.edb.primitive.Path.width.html">
+       width
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.Primitive.html">
+     ansys.edb.primitive.Primitive
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.Polygon.html">
+     ansys.edb.primitive.Polygon
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.Rectangle.html">
+     ansys.edb.primitive.Rectangle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.Text.html">
+     ansys.edb.primitive.Text
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.BondwireCrossSectionType.html">
+     ansys.edb.primitive.BondwireCrossSectionType
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.BondwireType.html">
+     ansys.edb.primitive.BondwireType
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.BackDrillType.html">
+     ansys.edb.primitive.BackDrillType
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.PathCornerType.html">
+     ansys.edb.primitive.PathCornerType
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.PathEndCapType.html">
+     ansys.edb.primitive.PathEndCapType
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.PrimitiveType.html">
+     ansys.edb.primitive.PrimitiveType
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ansys.edb.primitive.RectangleRepresentationType.html">
+     ansys.edb.primitive.RectangleRepresentationType
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../session.html">
+   Session
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../simulation_setup.html">
+   Simulation Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../terminal.html">
+   Terminals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../utility.html">
+   Utility
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../release_notes.html">
+   Release Notes
+  </a>
+ </li>
+</ul>
+
+    
+    
+  </div>
+</nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="ansys-edb-primitive-path">
+<h1>ansys.edb.primitive.Path<a class="headerlink" href="#ansys-edb-primitive-path" title="Permalink to this headline">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ansys.edb.primitive.Path">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.edb.primitive.</span></span><span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.edb.primitive.Path" title="Permalink to this definition">#</a></dt>
+<dd><p>Class representing a path object.</p>
+<p class="rubric">Methods</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.add_void.html#ansys.edb.primitive.Path.add_void" title="ansys.edb.primitive.Path.add_void"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.add_void</span></code></a>(hole)</p></td>
+<td><p>Add a void to primitive.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.cast.html#ansys.edb.primitive.Path.cast" title="ansys.edb.primitive.Path.cast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.cast</span></code></a>()</p></td>
+<td><p>Cast the primitive object to correct concrete type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.create.html#ansys.edb.primitive.Path.create" title="ansys.edb.primitive.Path.create"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.create</span></code></a>(layout, layer, net, width, ...)</p></td>
+<td><p>Create a path.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.delete.html#ansys.edb.primitive.Path.delete" title="ansys.edb.primitive.Path.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.delete</span></code></a>()</p></td>
+<td><p>Delete the layout object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.find_by_id.html#ansys.edb.primitive.Path.find_by_id" title="ansys.edb.primitive.Path.find_by_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.find_by_id</span></code></a>(layout, uid)</p></td>
+<td><p>Find a <a class="reference internal" href="../glossary.html#term-Connectable"><span class="xref std std-term">Connectable</span></a> object by Database ID.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.get_clip_info.html#ansys.edb.primitive.Path.get_clip_info" title="ansys.edb.primitive.Path.get_clip_info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.get_clip_info</span></code></a>()</p></td>
+<td><p>Get data used to clip the path.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.get_end_cap_style.html#ansys.edb.primitive.Path.get_end_cap_style" title="ansys.edb.primitive.Path.get_end_cap_style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.get_end_cap_style</span></code></a>()</p></td>
+<td><p>Get path end cap styles.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.get_hfss_prop.html#ansys.edb.primitive.Path.get_hfss_prop" title="ansys.edb.primitive.Path.get_hfss_prop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.get_hfss_prop</span></code></a>()</p></td>
+<td><p>Get HFSS properties.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.get_product_property.html#ansys.edb.primitive.Path.get_product_property" title="ansys.edb.primitive.Path.get_product_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.get_product_property</span></code></a>(prod_id, attr_id)</p></td>
+<td><p>Get the product property of the layout object with the given product and attribute ids.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.get_product_property_ids.html#ansys.edb.primitive.Path.get_product_property_ids" title="ansys.edb.primitive.Path.get_product_property_ids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.get_product_property_ids</span></code></a>(prod_id)</p></td>
+<td><p>Get a list of attribute ids corresponding to the provided product id for the layout object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.remove_hfss_prop.html#ansys.edb.primitive.Path.remove_hfss_prop" title="ansys.edb.primitive.Path.remove_hfss_prop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.remove_hfss_prop</span></code></a>()</p></td>
+<td><p>Remove HFSS properties.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.render.html#ansys.edb.primitive.Path.render" title="ansys.edb.primitive.Path.render"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.render</span></code></a>(width, end_cap1, end_cap2, ...)</p></td>
+<td><p>Render a Path object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.set_clip_info.html#ansys.edb.primitive.Path.set_clip_info" title="ansys.edb.primitive.Path.set_clip_info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.set_clip_info</span></code></a>(clipping_poly[, keep_inside])</p></td>
+<td><p>Set data used to clip the path.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.set_end_cap_style.html#ansys.edb.primitive.Path.set_end_cap_style" title="ansys.edb.primitive.Path.set_end_cap_style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.set_end_cap_style</span></code></a>(end_cap1, end_cap2)</p></td>
+<td><p>Set path end cap styles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.set_hfss_prop.html#ansys.edb.primitive.Path.set_hfss_prop" title="ansys.edb.primitive.Path.set_hfss_prop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.set_hfss_prop</span></code></a>(material, solve_inside)</p></td>
+<td><p>Set HFSS properties.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.set_product_property.html#ansys.edb.primitive.Path.set_product_property" title="ansys.edb.primitive.Path.set_product_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.set_product_property</span></code></a>(prod_id, attr_id, ...)</p></td>
+<td><p>Set the product property of the layout object associated with the given product and attribute ids.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.can_be_zone_primitive.html#ansys.edb.primitive.Path.can_be_zone_primitive" title="ansys.edb.primitive.Path.can_be_zone_primitive"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.can_be_zone_primitive</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>: If a path can be a zone.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.center_line.html#ansys.edb.primitive.Path.center_line" title="ansys.edb.primitive.Path.center_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.center_line</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.geometry.PolygonData.html#ansys.edb.geometry.PolygonData" title="ansys.edb.geometry.PolygonData"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonData</span></code></a>: Center line for this Path.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.component.html#ansys.edb.primitive.Path.component" title="ansys.edb.primitive.Path.component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.component</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.hierarchy.ComponentGroup.html#ansys.edb.hierarchy.ComponentGroup" title="ansys.edb.hierarchy.ComponentGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">ComponentGroup</span></code></a>: Component of the <a class="reference internal" href="../glossary.html#term-Connectable"><span class="xref std std-term">Connectable</span></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.corner_style.html#ansys.edb.primitive.Path.corner_style" title="ansys.edb.primitive.Path.corner_style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.corner_style</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.primitive.PathCornerType.html#ansys.edb.primitive.PathCornerType" title="ansys.edb.primitive.PathCornerType"><code class="xref py py-class docutils literal notranslate"><span class="pre">PathCornerType</span></code></a>: Path's corner style.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.edb_uid.html#ansys.edb.primitive.Path.edb_uid" title="ansys.edb.primitive.Path.edb_uid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.edb_uid</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>: The unique, persistent ID for the <a class="reference internal" href="../glossary.html#term-Connectable"><span class="xref std std-term">Connectable</span></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.group.html#ansys.edb.primitive.Path.group" title="ansys.edb.primitive.Path.group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.group</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.hierarchy.Group.html#ansys.edb.hierarchy.Group" title="ansys.edb.hierarchy.Group"><code class="xref py py-class docutils literal notranslate"><span class="pre">Group</span></code></a>: Group of the <a class="reference internal" href="../glossary.html#term-Connectable"><span class="xref std std-term">Connectable</span></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.has_voids.html#ansys.edb.primitive.Path.has_voids" title="ansys.edb.primitive.Path.has_voids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.has_voids</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>: If a primitive has voids inside.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.id.html#ansys.edb.primitive.Path.id" title="ansys.edb.primitive.Path.id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.id</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></a>: The unique ID of an EDB object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.is_negative.html#ansys.edb.primitive.Path.is_negative" title="ansys.edb.primitive.Path.is_negative"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.is_negative</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>: If the primitive is negative.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.is_null.html#ansys.edb.primitive.Path.is_null" title="ansys.edb.primitive.Path.is_null"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.is_null</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>: Determine whether this object exists in EDB.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.is_parameterized.html#ansys.edb.primitive.Path.is_parameterized" title="ansys.edb.primitive.Path.is_parameterized"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.is_parameterized</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>: Primitive's parametrization.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.is_void.html#ansys.edb.primitive.Path.is_void" title="ansys.edb.primitive.Path.is_void"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.is_void</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>: If a primitive is a void.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.is_zone_primitive.html#ansys.edb.primitive.Path.is_zone_primitive" title="ansys.edb.primitive.Path.is_zone_primitive"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.is_zone_primitive</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a>: If primitive object is a zone.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.layer.html#ansys.edb.primitive.Path.layer" title="ansys.edb.primitive.Path.layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.layer</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.layer.Layer.html#ansys.edb.layer.Layer" title="ansys.edb.layer.Layer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Layer</span></code></a>: Layer that the primitive object is on.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.layout.html#ansys.edb.primitive.Path.layout" title="ansys.edb.primitive.Path.layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.layout</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.layout.Layout.html#ansys.edb.layout.Layout" title="ansys.edb.layout.Layout"><code class="xref py py-class docutils literal notranslate"><span class="pre">Layout</span></code></a>: Owning layout of the object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.layout_obj_type.html#ansys.edb.primitive.Path.layout_obj_type" title="ansys.edb.primitive.Path.layout_obj_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.layout_obj_type</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.miter_ratio.html#ansys.edb.primitive.Path.miter_ratio" title="ansys.edb.primitive.Path.miter_ratio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.miter_ratio</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.utility.Value.html#ansys.edb.utility.Value" title="ansys.edb.utility.Value"><code class="xref py py-class docutils literal notranslate"><span class="pre">Value</span></code></a>: Miter ratio.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.msg.html#ansys.edb.primitive.Path.msg" title="ansys.edb.primitive.Path.msg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.msg</span></code></a></p></td>
+<td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">EDBObjMessage</span></code> : Protobuf message that represents this object's ID.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.net.html#ansys.edb.primitive.Path.net" title="ansys.edb.primitive.Path.net"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.net</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.net.Net.html#ansys.edb.net.Net" title="ansys.edb.net.Net"><code class="xref py py-class docutils literal notranslate"><span class="pre">Net</span></code></a>: Net of the <a class="reference internal" href="../glossary.html#term-Connectable"><span class="xref std std-term">Connectable</span></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.obj_type.html#ansys.edb.primitive.Path.obj_type" title="ansys.edb.primitive.Path.obj_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.obj_type</span></code></a></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">LayoutObjType</span></code>: Layout object type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.owner.html#ansys.edb.primitive.Path.owner" title="ansys.edb.primitive.Path.owner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.owner</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.primitive.Primitive.html#ansys.edb.primitive.Primitive" title="ansys.edb.primitive.Primitive"><code class="xref py py-class docutils literal notranslate"><span class="pre">Primitive</span></code></a>: Owner of the primitive object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.primitive_type.html#ansys.edb.primitive.Path.primitive_type" title="ansys.edb.primitive.Path.primitive_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.primitive_type</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.primitive.PrimitiveType.html#ansys.edb.primitive.PrimitiveType" title="ansys.edb.primitive.PrimitiveType"><code class="xref py py-class docutils literal notranslate"><span class="pre">PrimitiveType</span></code></a>: Primitive type of the primitive.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.voids.html#ansys.edb.primitive.Path.voids" title="ansys.edb.primitive.Path.voids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.voids</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/dev/library/stdtypes.html#list" title="(in Python v3.12)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a> of <a class="reference internal" href="ansys.edb.primitive.Primitive.html#ansys.edb.primitive.Primitive" title="ansys.edb.primitive.Primitive"><code class="xref py py-class docutils literal notranslate"><span class="pre">Primitive</span></code></a>: List of void        primitive objects inside the primitive.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.edb.primitive.Path.width.html#ansys.edb.primitive.Path.width" title="ansys.edb.primitive.Path.width"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path.width</span></code></a></p></td>
+<td><p><a class="reference internal" href="ansys.edb.utility.Value.html#ansys.edb.utility.Value" title="ansys.edb.utility.Value"><code class="xref py py-class docutils literal notranslate"><span class="pre">Value</span></code></a>: Path width.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</section>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright (c) 2022 ANSYS, Inc. All rights reserved.<br>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
